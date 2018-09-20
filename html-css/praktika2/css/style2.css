@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans|Work+Sans');
+
+/* Этот CSS-селектор выделяет каждый элемент на странице. Многие разработчики используют его для того, чтобы скинуть у всех элементов значения margin и padding. На первый взгляд это удобно, но все-таки в рабочем коде так лучше не делать. Этот CSS-селектор слишком сильно грузит броузер.*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+width: 1366px;
+margin: auto;
+background-color: #ffffff;   
+}
+/* убрать потом тут акву */
+
+/* у ссылок убираем подчеркивание и даем ей черный цвет */
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* у списков убираем точки в начале строк */
+ul{
+    list-style: none;
+}
+
+.nav-header {
+    width: 1170px;
+    margin: auto;
+}
+
+.header-menu {
+    float: right;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.header-menu-item {
+    float: left;
+    padding: 45px 30px 46px 0;
+}
+
+.logo {
+    float: left;
+    padding: 38px 0 37px 0;
+}
+
+.section-inform-img {
+    background-color: #f6f6f6;
+    width: 1366px;
+    margin: auto;
+}
+
+.inform {
+    float: left;
+    width: 585px;
+    padding-left:98px;  
+    padding: 105px 0 0 98px;  
+}
+
+.zagolovok-breakfest, .chapter-one, .chapter-two, .chapter-three, .chapter-four, .chapter-five {
+    width: 483px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: rgba(120, 120, 120, 255);
+    }
+
+.chapter-one {
+    margin-top: 33px;
+}
+
+.chapter-three {
+    margin-top: 60px;
+}
+
+.breakfest {
+    float: right;
+    width: 683px;
+    height: 570px;
+}
+
+span {
+    font-weight: bold;
+    color: #000;
+}
+
+.chapter-four, .chapter-five {
+    margin: 5px 0 0 0;
+}
+
+.chapter-two {
+    margin: 33px 0 0 0;
+}
+
+.zagolovok-breakfest {
+    font-weight: bold;
+    color: #3f2525;
+    font-size: 38px;
+}
+
+.menu {
+    width: 1366px;
+}
+
+.blog-nav {
+    width: 1170px;
+    margin: auto;
+    text-transform: uppercase; 
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+
+.previous-project {
+    float: left;
+    margin: 46px 0 45px 0;
+    }
+
+.next-project {
+    float: right;
+    margin: 46px 0 45px 0;
+}
+
+.navigation {
+    float: left;
+    padding-left: 400px;
+    padding-top: 50px;
+}
+
+a, img {
+    display: block;
+}
+
+.footer-menu-main {
+    width: 1366px;
+    background-color: #141414;
+}
+
+.container {
+    margin:auto;
+    width: 1170px;
+    background-color: #141414;
+    padding: 100px 0 0 0;
+}
+
+.footer-nav a {
+    font-family:'Nunito Sans', sans-serif;
+    font-size:15px;
+    color: #c3a9a9;
+}
+
+.container {
+    font-family:'Nunito Sans', sans-serif;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #c3a9a9;
+}
+
+.contact, .info-title, .info-сr {
+    font-size: 15px;
+    color: #c3a9a9;
+}
+
+.footer-nav {
+    float: right;
+   }
+
+.footer-menu, .footer-menu-news, .footer-menu-social {
+    float: left;
+    margin-left: 30px;
+}
+
+.contact {
+    margin-left: 269px;
+    float: left;
+}
+.info {
+    float: left;
+}
