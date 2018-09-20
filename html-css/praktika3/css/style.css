@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans|Work+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img, a{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+.header{
+    width: 1366px;
+    margin: auto;
+}
+
+.nav-header{
+    width: 1170px;
+    margin: 38px auto;
+}
+
+.logo-img{
+    width: 31px;
+    height: 25px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo, .menu-item {
+    float: left;
+}
+
+.menu-item {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+.menu-item:hover > a{
+    color:#ade7e4;
+}
+
+.header-menu {
+    float: right;
+}
+
+/* Part Main */
+.main {
+    width: 1366px;
+    margin: auto;
+    background: #acacac url(https://static1.squarespace.com/static/584154245016e1ca1b9b367f/5842e187579fb3ad1bfe69c8/58c98baeb3db2b11e2db0893/1536333540608/?format=300w);
+    background-size: cover;
+    background-attachment: fixed
+}
+
+.main {
+    background-repeat: repeat;
+}
+
+.dog {
+    width: 100px;
+    height: 100px;
+}
+
+.pfolio-title{
+    padding-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #171717;
+}
+
+.pfolio-subtitle{
+    padding: 30px 0 97px;
+    width: 512px;
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;    
+    font-size: 18px; 
+    font-weight: 300;
+    color: #b9b9b9; 
+    text-align: center;  
+}
+
+.pfolio-img{
+    float: left;
+}
+
+.pfolio-item{
+    width: 341px;
+    height: 300px;        
+}
+
+/* Footer */
+.footer {
+    width: 1366px;
+    margin: auto;
+    background-color: #141414;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.info-title{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info, .contact, .footer-menu a {   
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    color: #acacac;
+}
+
+.info, .contact, .footer-nav, .footer-menu {   
+    float: left;
+}
+
+.contact {
+    margin-left: 246px;
+}
+
+.footer-nav {
+    margin-left: 145px;
+}
+
+.news{
+    margin-left: 55px;
+}
+
+.social{
+    margin-left: 135px;
+}
