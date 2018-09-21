@@ -1,0 +1,83 @@
+@import url(header.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color:
+}
+
+img {
+    display: block;
+}
+
+.full-winter-kit {
+    width: 1540px;
+    margin: auto;
+    background-image: url(../img/FeaturedBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 518px;
+    /* margin: 229px 738px 232px 284px; */
+    padding: 229px 738px 232px 284px;
+    position: relative;
+}
+
+h2 {
+    margin: 0 117px 152px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 37px;
+    color: rgba(255, 89, 18, 255);
+    margin-bottom: 66px;
+}
+
+.jacket {
+    margin-bottom: 16px;
+}
+
+.lorem {
+    margin-bottom: 63px;
+}
+
+.item {
+    float: left;
+    list-style: none;
+}
+
+.order-now {
+    margin-left: 64px;
+    position: relative;
+}
+
+.order-now:before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/CartIco.png);
+    left: -25px;
+    width: 25px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+/* .content:before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/display.png);
+    left: -25px;
+    bottom: -25px;
+    width: 10px;
+    height: 136px;
+    background-repeat: no-repeat;
+} */

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    counter-reset: variable 50;  
+}
+
+
+li:before {
+    counter-increment: variable -3;
+    content: "Счетчик :"counter(variable);
+    margin-right: 50px;
+}
+
+li {
+    margin-left: 50px;
+    list-style: none;
+}

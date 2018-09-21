@@ -1,0 +1,111 @@
+.info-item-mail, .info-item-tel {
+    float: left;
+    list-style: none;
+    padding-right: 40px;
+    position: relative;
+}
+
+header {
+    margin: auto;
+    width: 1540px;
+    border-bottom: 1px solid;
+}
+
+.social-item {
+    float: right;
+}
+
+.info-item-mail:before {
+    content: "";
+    background-image: url(../img/MailIco.png);
+    display: block;
+    clear: both;
+    height: 11px;
+    width: 18px;
+    position: absolute;
+    left: -30px;
+    top: 5px;
+}
+
+.info-item-tel:before {
+    content: "";
+    background-image: url(../img/PhoneIco.png);
+    display: block;
+    clear: both;
+    height: 11px;
+    width: 18px;
+    position: absolute;
+    left: -30px;
+    top: 5px;
+}
+
+.social {
+    float: right;
+}
+
+.social-item {
+    float: left;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.head-small {
+    padding: 25px 171px 24px 186px;
+    width: 1170px;
+    margin: auto;
+}
+
+.info {
+    float: left;
+}
+
+.nav-small {
+    margin: auto;
+    width: 1216px;
+}
+
+.spisok {
+    list-style: none;
+    float: left;
+    list-style: none;
+    margin-left: 83px;
+    margin-top: 54px;
+    margin-bottom: 54px;
+}
+
+.spisok-poisk {
+    float: right;
+    list-style: none;
+    margin-right: 12px;
+    margin-top: 55px;
+    margin-bottom: 44px;
+}
+
+.navigation-item, .poisk-item {
+    float: left;
+}
+
+.text {
+    text-transform: capitalize;
+}
+
+.navigation-poisk {
+    width: 1540px;
+    margin: auto;
+}
+
+.logo {
+    width: 118px;
+    height: 40px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.navigation-item {
+    margin-left: 40px;
+}
+
+.poisk-item {
+    margin-left: 30px;
+}
