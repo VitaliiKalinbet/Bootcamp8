@@ -12,15 +12,17 @@
 }
 
 a {
-    text-decoration: none; /* Убирает подчеркивание для ссылок */
-    text-transform: uppercase; /*заглавные буквы*/
+    text-decoration: none;
+    /* Убирает подчеркивание для ссылок */
+    text-transform: uppercase;
+    /*заглавные буквы*/
     font-family: 'Playfair Display', serif;
     color: #acacac;
     font-size: 14px;
 }
 
 .menu {
-    list-style: none; 
+    list-style: none;
     margin: 77px auto 103px;
     /* width: 573px; */
 }
@@ -31,7 +33,7 @@ a {
 }
 
 .menu-item {
-  float: left;
+    float: left;
 }
 
 .lifestyle {
@@ -63,33 +65,71 @@ section {
     width: 960px;
 }
 
-
-/* .festival {
-    width: 420px;
-    float: left;
+.lifestyle-ssilka {
+    color: #03a9f4;
+}
+main {
+    margin: 0 auto;
+    width: 1200px;
 }
 
-.coffee {
+.article {
     width: 420px;
-    float: right;
+    display: inline-block;
 }
 
-.dream {
-    width: 420px;
-    float: left;
+.contenr-dream, .content-alps, .content-festival, .content-coffee {
+    margin-bottom: 136px;
 }
 
-.alps {
-    width: 420px;
-    float: right;
+.second {
+    margin-left: 56px;
 }
 
-.running {
-    width: 420px;
-    float: left;
+
+span {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', serif;
+    font-size: 11px;
+    color: #b4ad9e;
+    margin: 31px 0 28px;
 }
 
-.winter {
-    width: 420px;
-    float: right;
-} */
+span {
+    display: block;
+}
+
+h2 {
+    font-family: 'PlayFair', serif;
+    font-size: 25px;
+    color: #626262;
+    margin-bottom: 34px;
+}
+
+p {
+    font-family: 'PlayFair', serif;
+    font-size: 11px;
+    color: #626262;
+}
+
+/* ФУТЕР */
+
+ footer {
+    width: 1200px;
+    margin: auto;
+}
+
+.submite {
+    display: block;
+} 
+
+.submit {
+    padding: 21px 34px 22px 34px;
+    margin: 54px 529px 70px 507px;
+    background-color: #ffffff;
+    border: 1px solid;
+    font-family: 'PlayFair', serif;
+    font-size: 17px;
+} 
+
+
