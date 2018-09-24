@@ -1,0 +1,28 @@
+.one {
+    background-color: #00ff00;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.two {
+    background-color: #ff0000;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* left: 20px; */
+    /* transform: translateX(20px) translateY(20px); */
+    /* opacity: 0.3; */
+    /* z-index: 1; */
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+.three {
+    background-color: #0000ff;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
