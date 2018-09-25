@@ -3,6 +3,8 @@
     width: 200px;
     height: 200px;
     position: relative;
+    /* margin: 50px; */
+    padding: 50px;
 }
 
 .two {
@@ -14,10 +16,11 @@
     /* transform: translateX(20px) translateY(20px); */
     /* opacity: 0.3; */
     /* z-index: 1; */
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%);
     top: 50%;
-    left: 50%;
-
+    left: 50%; */
+    /* margin: 50px; */
+/* padding: 50px; */
 }
 
 .three {

@@ -160,6 +160,14 @@ span {
     float: left;
 }
 
+.tovar-item:hover .name   {
+    background-color: #1abc9c;
+}
+
+.tovar-item:hover .cena {
+    background-color: #7fd9c7;
+}
+
 .news {
     list-style: none;
     margin-top: 114px;
