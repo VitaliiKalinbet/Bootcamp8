@@ -22,15 +22,20 @@ a.nav:hover {
 .logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 21px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
 .logo::first-letter {
     font-family: 'Roboto', sans-serif;
-    font-size: 21px;
+    font-size: 30px;
     font-weight: 900;
     color: #1abc9c;
+}
+
+header {
+    margin-bottom: 32px;
+    padding-top: 38px;
 }
 
 .menu-item {
@@ -38,14 +43,14 @@ a.nav:hover {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .navigation {
     width: 1120px;
     display: flex;
     justify-content: space-between;
-    padding: 38px 0 32px 0;
+    /* padding-top: 38px; */
     align-items: center;
     margin: auto;
 }

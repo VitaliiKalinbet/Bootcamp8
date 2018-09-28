@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    width: 1200px;
+    margin: auto;
+}
+
+/* работаем с хедером  */
+
+.navigation-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+}
+
+.navigation-ul-item {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+.navigation-ul-item-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #c1ede4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* всплывашки в хедере  */
+
+.navigation-ul-item-link:hover {
+    color: #f38181;
+}
+
+.navigation-ul-item-link:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #f38181;
+    transition: width 2s linear;
+}
+
+.navigation-ul-item > a:hover:after,
+.navigation-ul-item > a:focus:after {
+   width: 100%;
+}
+
+/* задаю высоту навигации */
+
+.navigation {
+    margin-bottom: 127px;
+    padding-top: 28px;
+}
+
+
+/* работаем с мейном */
+
+/* с секцией services работаем */
+
+.oblique-text {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-style: 24px;
+}
+
+.direct-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: 30px;
+    text-transform: uppercase;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: wrap;
+}
+
+.zagolovok1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 111px;
+}
+
