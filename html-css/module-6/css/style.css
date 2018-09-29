@@ -35,6 +35,7 @@ header, main, footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    transition: width 200ms linear;
 }
 
 .navigation {
@@ -52,15 +53,17 @@ header, main, footer {
     content: "";
     display: block;
     position: absolute;
-    width: 0%;
+    width: 10%;
     height: 3px;
     background-color: #f38181;
-    transition: width 2s linear;
+    transition: width 200ms linear;
+    margin-top: 12px;
 }
 
 .navigation-ul-item > a:hover:after,
 .navigation-ul-item > a:focus:after {
    width: 100%;
+   transition: width 200ms linear;
 }
 
 /* задаю высоту навигации */
@@ -74,17 +77,32 @@ header, main, footer {
 /* работаем с мейном */
 
 /* с секцией services работаем */
+.amazing {
+    position: relative;
+}
+
+.amazing::after {  
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 42px;
+    margin-left: 129px;
+}
 
 .oblique-text {
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
     font-style: 24px;
+    margin-bottom: 22px;
 }
 
 .direct-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-style: 30px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
@@ -93,14 +111,386 @@ header, main, footer {
     justify-content: center;
     flex-direction: column;
     flex-flow: wrap;
+    margin-bottom: 92px;
 }
 
 .zagolovok1 {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 1200px;
     margin: auto;
     margin-bottom: 111px;
 }
+
+/* даю ширину заголовкам */
+.work-with {
+    width: 130px;
+}
+
+.amazing {
+    width: 315px;
+}
+
+/* работаем со списком секции сервисы */
+
+.properties {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: auto;
+    justify-content: center;
+}
+
+.properties-item {
+    width: 269px;
+    padding-left: 60px;
+    margin-right: 72px;
+    list-style: none;
+    position: relative;
+}
+
+.properties-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.name-services {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.name-services-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #b6b6b6;
+}
+
+.properties-item:nth-child(-n+3) {
+    margin-bottom: 101px;
+}
+
+a, img {
+    display: block;
+}
+
+.properties-item-link {
+    text-decoration: none;
+}
+
+.photography::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/clock.png);
+    width: 32px;
+    height: 32px;
+    left: -1px;
+}
+
+.web-design::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/web-design.png);
+    width: 32px;
+    height: 32px;
+    left: -1px;
+}
+
+.creativity::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/computer.png);
+    width: 32px;
+    height: 32px;
+    left: -1px;
+}
+
+.seo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/seo.png);
+    width: 32px;
+    height: 32px;
+    left: -1px;
+}
+
+.css::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/home.png);
+    width: 32px;
+    height: 32px;
+    left: -1px;
+}
+
+.digital::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/digital.png);
+    width: 32px;
+    height: 32px;
+    left: -1px;
+}
+
+/* секция команда */
+.team {
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 82px;
+}
+
+.team-zagolovok-div {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 90px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meet-our-team::after {  
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 42px;
+    margin-left: 102px;
+}
+
+.meet-our-team {
+    margin-bottom: 91px;
+}
+
+.lorem {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.team-list {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list-li {
+    list-style: none;
+}
+
+span {
+    display: block;
+}
+
+.name {
+    margin-top: 30px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profession {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* работаем с фуитером */
+
+footer {
+    border-top: solid 1px #e5e5e5;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.license {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.submit {
+    text-transform: uppercase;
+    background-color: #95e1d3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 14px 33px;
+    border: none;
+}
+
+.email {
+    padding: 13px 140px 12px 13px;
+    border: solid 1px #e5e5e5;
+    border-right: none;
+}
+
+.forma-vvoda {
+    display: flex;
+}
+
+/* всплывающее окно */
+
+.div-img-plus-pop-up-list {
+    position: relative;
+    background-image:linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+}
+
+.pop-up-list {
+    position: absolute;   
+    display: flex;
+    width: 224px;
+    top: 50%; 
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding: 209px 79px 208px 80px;
+    /* position: absolute; */
+    /* transform: translate(-10px, -10px); */
+    /* background-color: linear-gradient(to top,rgba(229, 202, 129, 0.9) 0%,rgba(242, 149, 140, 0.9) 100%); */
+    background-image:linear-gradient( 0deg, rgb(252,227,138, 0.8) 0%, rgb(243,129,129, 0.8) 100%);
+    /* padding: 209px 79px 208px 80px; */
+
+}
+
+.pop-up-list-item {
+    width: 224px;
+    list-style: none;
+}
+
+.pop-up-list-item-link-fc {
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+    border: none;
+    position: relative;
+}
+
+.pop-up-list-item-link-fc::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/facebook.png);   
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 26px;
+    left: 23px;
+    top: 15px;
+}
+
+.pop-up-list-item-link-tw {
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+    border: none;
+    position: relative;
+}
+
+.pop-up-list-item-link-tw::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/twitter.png);   
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 22px;
+    left: 15px;
+    top: 17px;
+}
+
+.pop-up-list-item-link-pin {
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+    border: none;
+    position: relative;
+}
+
+.pop-up-list-item-link-pin::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/pinterest.png);   
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 26px;
+    left: 17px;
+    top: 15px;
+}
+
+.pop-up-list-item-link-inst {
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+    border: none;
+    position: relative;
+}
+
+.pop-up-list-item-link-inst::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../img/instagram.png);   
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+    left: 14px;
+    top: 15px;
+}
+
+/* работу над самим списком тут я полностью закончил */
+
+/* теперь делаем чтобы список появлялся только при ховере и отодвигался */
+
+.pop-up-list {
+    display: none;
+}
+
+.div-img-plus-pop-up-list:hover .pop-up-list {
+    display: flex;
+    transform: translate(-202.5px, -247.5px);
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+
+.div-img-plus-pop-up-list:hover .team-list-link-img {
+    box-shadow: 11px 11px 0 0 #95e1d3;
+    transform: translate(-11px, -11px);
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+
 
