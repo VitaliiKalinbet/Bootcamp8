@@ -49,22 +49,26 @@ header, main, footer {
     color: #f38181;
 }
 
-.navigation-ul-item-link:hover::after {
+.navigation-ul-item-link::after {
     content: "";
     display: block;
     position: absolute;
-    width: 10%;
+    width: 0%;
     height: 3px;
     background-color: #f38181;
-    transition: width 200ms linear;
     margin-top: 12px;
 }
 
-.navigation-ul-item > a:hover:after,
+.navigation-ul-item-link:hover::after {
+    transition: width 200ms;
+    width: 100%;
+ }
+
+/* .navigation-ul-item > a:hover:after,
 .navigation-ul-item > a:focus:after {
    width: 100%;
    transition: width 200ms linear;
-}
+} */
 
 /* задаю высоту навигации */
 
@@ -375,15 +379,10 @@ a {
     display: flex;
     width: 224px;
     top: 50%; 
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 209px 79px 208px 80px;
-    /* position: absolute; */
-    /* transform: translate(-10px, -10px); */
-    /* background-color: linear-gradient(to top,rgba(229, 202, 129, 0.9) 0%,rgba(242, 149, 140, 0.9) 100%); */
     background-image:linear-gradient( 0deg, rgb(252,227,138, 0.8) 0%, rgb(243,129,129, 0.8) 100%);
-    /* padding: 209px 79px 208px 80px; */
-
 }
 
 .pop-up-list-item {
@@ -485,7 +484,7 @@ a {
     transition-duration: 200ms;
     transition-timing-function: linear;
 }
-
+ 
 .div-img-plus-pop-up-list:hover .team-list-link-img {
     box-shadow: 11px 11px 0 0 #95e1d3;
     transform: translate(-11px, -11px);
