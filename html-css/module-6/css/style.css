@@ -320,7 +320,7 @@ span {
     text-transform: capitalize;
 }
 
-/* работаем с фуитером */
+/* работаем с футером */
 
 footer {
     border-top: solid 1px #e5e5e5;
@@ -338,12 +338,22 @@ footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    display: flex;
 }
 
-a {
+.laaqiq {
     display: block;
     text-decoration: none;
+    color: #f6a6a6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.footer-content-div {
+    display: flex;
+    width: 295px;
+    justify-content: space-between;
 }
 
 .submit {
@@ -372,17 +382,6 @@ a {
 .div-img-plus-pop-up-list {
     position: relative;
     background-image:linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-}
-
-.pop-up-list {
-    position: absolute;   
-    display: flex;
-    width: 224px;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 209px 79px 208px 80px;
-    background-image:linear-gradient( 0deg, rgb(252,227,138, 0.8) 0%, rgb(243,129,129, 0.8) 100%);
 }
 
 .pop-up-list-item {
@@ -475,21 +474,23 @@ a {
 /* теперь делаем чтобы список появлялся только при ховере и отодвигался */
 
 .pop-up-list {
+    position: absolute;   
     display: none;
+    width: 224px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 209px 80px 208px 80px;
+    background-image:linear-gradient( 0deg, rgb(252,227,138, 0.8) 0%, rgb(243,129,129, 0.8) 100%);
 }
 
 .div-img-plus-pop-up-list:hover .pop-up-list {
-    display: flex;
-    transform: translate(-202.5px, -247.5px);
-    transition-duration: 200ms;
-    transition-timing-function: linear;
+    display: flex;    
 }
- 
-.div-img-plus-pop-up-list:hover .team-list-link-img {
+
+.div-img-plus-pop-up-list:hover {    
     box-shadow: 11px 11px 0 0 #95e1d3;
     transform: translate(-11px, -11px);
     transition-duration: 200ms;
     transition-timing-function: linear;
 }
-
-

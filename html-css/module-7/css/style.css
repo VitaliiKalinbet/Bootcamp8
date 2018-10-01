@@ -1,0 +1,119 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, main {
+    width: 1400px;
+    margin: auto;
+}
+
+.navigation, .services {
+    width: 940px;
+    margin: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+    margin-bottom: 120px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+}
+
+.nav-list-item {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+/* 
+работу с футером завершили выше
+теперь работаем с мейном, а именно секцией сервисы */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 115px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list-item {
+    list-style: none;
+}
+
+.services-caption {
+    margin-bottom: 19px;
+}
+
+.about-services {
+    margin-bottom: 174px;
+}
+
+/* работаем с мейном, секция контакты */
+
+.contact {
+    padding-top: 115px;
+    padding-bottom: 115px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-caption {
+    margin-bottom: 23px;
+    color: #fff;
+}
+
+.contact-caption-about {
+    margin-bottom: 73px;
+    color: #fff;
+}
+
+.forma-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.forma-list-item {
+    list-style: none;
+}
+
+.forma-list-item-input {
+    padding-bottom: 21px;
+    padding-top: 19px;
+    padding-left: 20px;
+    width: 455px;
+}
+
+.bot {
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 455px;
+    margin-left: 30px;
+}
+
+.part-forma {
+    display: flex;
+}
+
+.contact {
+    width: 1400px;
+}
