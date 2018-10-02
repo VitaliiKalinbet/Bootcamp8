@@ -1,4 +1,42 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+            url('../fonts/montserrat-v12-latin-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-slab';
+    src: url('../fonts/roboto-slab-v7-latin-700.woff2') format('woff2'),
+            url('../fonts/roboto-slab-v7-latin-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-slab';
+    src: url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'),
+            url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Roboto-slab';
+    src: url('../fonts/roboto-v18-latin-italic.woff2') format('woff2'),
+            url('../fonts/roboto-v18-latin-italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
 
 * {
     margin: 0;
@@ -69,6 +107,9 @@ header, main {
     padding-top: 115px;
     padding-bottom: 115px;
     background-color: #222222;
+    background-image: url('../img/Map-Image.png');
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,12 +149,191 @@ header, main {
 textarea {
     width: 455px;
     margin-left: 30px;
+    resize: none;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .part-forma {
     display: flex;
+    justify-content: center;
 }
 
 .contact {
     width: 1400px;
 }
+
+.div-button {
+    width: 1400px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    text-align: center;
+    padding: 25px 47px 27px 47px;
+    background-color: #fed136;
+    border: none;
+}
+
+.nav-list-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: #3d3d3d;
+}
+
+
+.services-caption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    color:#222222;
+    text-transform: uppercase;
+}
+
+.about-services {
+    font-family: 'Roboto-slab', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color:#838383;
+}
+
+.services-name {
+    font-family: 'Roboto-slab', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color:#222222;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services-name-about {
+    font-family: 'Roboto-slab', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color:#777777;
+}
+
+.contact-caption {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+
+.contact-caption-about {
+    font-family: 'Roboto-slab', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:#606060;
+    font-style: italic;
+}
+
+.forma-list-item-input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+textarea::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.nav-list-item:hover {
+    color: #fed136;
+}
+
+.e-commerce, .responsive, .web {
+    position: relative;
+}
+
+.e-commerce::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/Icon-Basket.png');
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    width: 40px;
+    height: 39px;
+    right: 120px;
+    bottom: 42px;
+    border: 5px solid #fed136;
+    border-radius: 50px;
+    padding: 14px 14px 14px 14px;
+}
+
+.responsive::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/Icon-Laptop.png');
+    background-repeat: no-repeat;
+    background-position: 13px 15px;
+    width: 41px;
+    height: 35px;
+    right: 125px;
+    bottom: 42px;
+    border: 5px solid #fed136;
+    border-radius: 50px;
+    padding: 16px 13px 16px 14px;
+}
+
+.web::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/Icon-Locked.png');
+    background-repeat: no-repeat;
+    background-position: 21px 13px;
+    width: 29px;
+    height: 38px;
+    right: 120px;
+    bottom: 42px;
+    border: 5px solid #fed136;
+    border-radius: 50px;
+    padding: 12px 20px 17px 19px;
+}
+
+.forma-list-item-input:valid {
+    outline: 2px solid #00ff00;
+}
+
+.forma-list-item-input:invalid {
+    outline: 2px solid #ff0000;
+}
+
+textarea:valid {
+    outline: 2px solid #00ff00;
+}
+
+textarea:invalid {
+    outline: 2px solid #ff0000;
+}
+
+
