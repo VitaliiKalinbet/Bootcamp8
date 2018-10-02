@@ -320,11 +320,11 @@ button {
     padding: 12px 20px 17px 19px;
 }
 
-.forma-list-item-input:valid {
+.bot:valid {
     outline: 2px solid #00ff00;
 }
 
-.forma-list-item-input:invalid {
+.bot:invalid {
     outline: 2px solid #ff0000;
 }
 
