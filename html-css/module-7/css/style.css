@@ -44,8 +44,7 @@
 }
 
 header, main {
-    width: 1400px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .navigation, .services {
@@ -53,12 +52,15 @@ header, main {
     margin: auto;
 }
 
+.head {
+    margin-bottom: 120px;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 44px;
-    margin-bottom: 120px;
 }
 
 .nav-list {
@@ -98,12 +100,13 @@ header, main {
 }
 
 .about-services {
-    margin-bottom: 174px;
+    margin-bottom: 80px;
 }
 
 /* работаем с мейном, секция контакты */
 
 .contact {
+    margin: 0 auto;
     padding-top: 115px;
     padding-bottom: 115px;
     background-color: #222222;
@@ -126,13 +129,13 @@ header, main {
     color: #fff;
 }
 
+forma {
+    width: 960px;
+}
+
 .forma-list {
     display: flex;
     flex-direction: column;
-}
-
-.forma-list-item {
-    list-style: none;
 }
 
 .forma-list-item-input {
@@ -159,22 +162,13 @@ textarea {
     justify-content: center;
 }
 
-.contact {
-    width: 1400px;
-}
-
-.div-button {
-    width: 1400px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
 button {
+    display: block;
     text-align: center;
     padding: 25px 47px 27px 47px;
     background-color: #fed136;
     border: none;
+    margin: 30px auto 0;
 }
 
 .nav-list-item {
@@ -271,53 +265,53 @@ button {
     color: #fed136;
 }
 
-.e-commerce, .responsive, .web {
+/* .e-commerce, .responsive, .web {
     position: relative;
-}
+} */
 
 .e-commerce::before {
-    position: absolute;
+    display: block;
     content: "";
     background-image: url('../img/Icon-Basket.png');
     background-repeat: no-repeat;
     background-position: 14px 14px;
     width: 40px;
     height: 39px;
-    right: 120px;
-    bottom: 42px;
     border: 5px solid #fed136;
     border-radius: 50px;
     padding: 14px 14px 14px 14px;
+    margin: auto;
+    margin-bottom: 28px;
 }
 
 .responsive::before {
-    position: absolute;
+    display: block;
     content: "";
     background-image: url('../img/Icon-Laptop.png');
     background-repeat: no-repeat;
     background-position: 13px 15px;
     width: 41px;
     height: 35px;
-    right: 125px;
-    bottom: 42px;
     border: 5px solid #fed136;
     border-radius: 50px;
     padding: 16px 13px 16px 14px;
+    margin: auto;
+    margin-bottom: 28px;
 }
 
 .web::before {
-    position: absolute;
+    display: block;
     content: "";
     background-image: url('../img/Icon-Locked.png');
     background-repeat: no-repeat;
     background-position: 21px 13px;
     width: 29px;
     height: 38px;
-    right: 120px;
-    bottom: 42px;
     border: 5px solid #fed136;
     border-radius: 50px;
     padding: 12px 20px 17px 19px;
+    margin: auto;
+    margin-bottom: 28px;
 }
 
 .bot:valid {
