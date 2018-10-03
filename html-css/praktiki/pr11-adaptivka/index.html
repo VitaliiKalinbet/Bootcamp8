@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Document</title>    
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <header class="header">
         <nav class="header-nav">
-            <p class="header-title">Navigation</p>
-            <div class="header-menu-wr">
-                <button class="header-button"></button>         
-                <ul class="header-menu">
-                    <li class="header-menu-item">psd website</li>
-                    <li class="header-menu-item">ul kits</li>
-                    <li class="header-menu-item">premium psd files</li>
-                    <li class="header-menu-item">about</li>
-                    <li class="header-menu-item">blog</li>
-                </ul>
-            </div>          
+        <p class="header-title">Navigation</p>
+        <div class="header-menu-wr">
+            <button class="header-button"></button>
+            <ul class="header-menu">
+                <li class="header-menu-item">PSD WEBSITES</li>
+                <li class="header-menu-item">UI KITS</li>
+                <li class="header-menu-item">PREMIUM PSD FILES</li>
+                <li class="header-menu-item">ABOUT</li>
+                <li class="header-menu-item">BLOG </li>
+            </ul>
+        </div>        
         </nav>
     </header>
-
     <main class="main">
         <section class="tagline">
-            <h1 class="tagline-title">Awesome Free PSD templates & Resources</h1>
-            <h2 class="tagline-subtitle">www.BlazRobar.com</h2>
+            <h1 class="tagline-title">Awesome Free PSD template & Resources</h1>
+            <h3 class="tagline-subtitle">www.BlazRobar.com</h3>
         </section>
-
         <section class="subtagline">
-            <h3 class="subtagline-title">I'm like the Robbin Hood of PSD files.</h3>
-            <a class="subtagline-buttom" href="#">></a>
+                <h3 class="subtagline-title">I'am like the Robin Hoode PSD files</h3>
+                <a class="subtagline-buttom">></a>
         </section>
-
         <section class="portfolio">
             <picture class="portfolio-item">
-                <img src="./img/1@1X.png" alt="1" srcset="./img/1@2X.png 2X">
+                <source media="(min-width: 980px) and (max-width: 1023px)" 
+                    srcset="./img/img_980_1024/1@1X_980.png 1x, ./img/img_980_1024/1@2X_980.png 2x">
+                <source media="(min-width: 640px) and (max-width: 979px)" 
+                srcset="./img/img_640/1@1X_640.png 1x, ./img/img_640/1@2X_640.png 2x">
+                <img src="./img/1@1X.png" alt="video" srcset="./img/1@2X.png 2x">
             </picture>
             <picture class="portfolio-item">
-                <img src="./img/2@1X.png" alt="2" srcset="./img/2@1X.png 2X">
+                    <source media="(min-width: 980px) and (max-width: 1023px)" 
+                    srcset="./img/img_980_1024/2@1X_980.png 1x, ./img/img_980_1024/2@2X_980.png 2x">
+                    <source media="(min-width: 640px) and (max-width: 979px)" 
+                    srcset="./img/img_640/2@1X_640.png 1x, ./img/img_640/2@2X_640.png 2x">
+                <img  src="./img/2@1X.png" alt="bridge" srcset="./img/2@2X.png 2x">
             </picture>
             <picture class="portfolio-item">
-                <img src="./img/3@1X.png" alt="3" srcset="./img/3@1X.png 2X">
-            </picture>
+                    <source media="(min-width: 980px) and (max-width: 1023px)" 
+                    srcset="./img/img_980_1024/3@1X_980.png 1x, ./img/img_980_1024/3@2X_980.png 2x">
+                    <source media="(min-width: 640px) and (max-width: 979px)" 
+                    srcset="./img/img_640/3@1X_640.png 1x, ./img/img_640/3@2X_640.png 2x">
+                <img src="./img/3@1X.png" alt="girl" srcset="./img/3@2X.png 2x">
+            </picture>                
         </section>
-
         <section class="about">
             <h3 class="about-title">BlazRobar.com</h3>
             <div class="wrapper">
-                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
-                <p class="about-text">Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
-                <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
-                <p class="about-text">                        Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p>
+            <p class="about-text">Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>            
+            <p class="about-text">Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
             </div>
-        </section>
-
+            </section>
     </main>
-
 </body>
-
 </html>
+

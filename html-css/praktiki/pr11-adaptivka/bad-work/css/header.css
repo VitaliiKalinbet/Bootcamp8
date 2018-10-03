@@ -1,0 +1,96 @@
+
+.header, .main {
+    width: 320px;
+    margin: 0 auto;
+}
+
+/* 1 rem - отталкиваемся от краев телефона  */
+
+.header-nav {
+    background-color: #373c3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    display: block;
+    width: 41px;
+    height: 37px;
+    background-image: url('../img/crop@1X.png');
+    border: none;
+}
+
+.header-menu-wr {
+    position: relative;
+}
+
+.header-menu {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    display: none;
+    list-style: none;
+    background-color: #373c3f;
+    width: 170px;
+}
+
+.header-menu-item, .header-title {
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    margin-left: 5%;
+}
+
+.header-menu-wr:hover .header-menu {
+    display: flex;
+}
+
+
+/* теперь делаем для 640рх все */
+
+@media (min-width: 640px) {
+    .header {
+        width: calc(320px*2);
+    }
+    .header-button {
+        width: 82px;
+        height: 74px;
+        background-image: url('../img/crop@1X\ _640.png');
+    }
+    .header-title, .header-menu-item {
+        font-size: 24px;
+    }
+    .header-menu {
+        top: calc(37px*2);
+        width: 352px;
+    }
+}
+
+@media (min-width: 980px) {
+    .header {
+        display: flex;
+        width: 980px;
+    }
+    .header-title {
+        display: none;
+    }
+    .header-menu {
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 530px;
+        padding: 36px 0 45px 48px;
+        width: 932px;
+    }
+    .header-menu-item {
+        font-size: 12px;
+        margin-left: 0;
+        margin-right: 3%;
+    }
+    .header-nav {
+        padding-left: 0;
+    }
+
+}
+
