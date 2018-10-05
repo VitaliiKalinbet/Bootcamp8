@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wr {
+    background-image: url('../img/fon.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding-top: 225px;
+    padding-bottom: 225px;
+}
+
+.header-title {  
+    font-family: 'Exo', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    color: rgba(40, 40, 40, 255);
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.play {
+    background-image: url('../img/Composed.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 59px;
+    height: 59px;
+    border: none;
+    margin-bottom: 39px;
+}
+
+.try_now {
+    background-color: #ff6d6d;
+    padding: 20px 50px;
+    border: none;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 19px;
+}
+
+.details {
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.about {
+    padding: 190px 0 165px;
+    background-image: url('../img/crop.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 46%;
+}
+
+.new-design {
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 109, 109, 255);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.about-title {
+    font-family: 'Exo', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+

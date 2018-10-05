@@ -1,0 +1,39 @@
+@import url(header.css);
+@import url(main.css);
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-v18-latin-300.woff2') format('woff2'),
+            url('../fonts/roboto-v18-latin-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'),
+            url('../fonts/roboto-v18-latin-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

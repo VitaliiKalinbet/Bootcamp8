@@ -1,0 +1,146 @@
+.partner-caption {
+    font-family: 'Montsserat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    margin-top: 68px;
+    color: #333333;
+    text-align: center;
+}
+
+.partner-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partner-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 220px;
+    margin-bottom: 28px;
+}
+
+.partner-list-item-img {
+    display: block;
+}
+
+.partner-list-item-img {
+    border: 0;
+    border-radius: 60px;
+    margin-bottom: 20px;
+}
+
+.bradley::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/Shape-tv.png');
+    width: 41px;
+    height: 41px;
+    top: 85px;
+    left: 140px;
+}
+
+.lucas::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/Shape-battle.png');
+    width: 41px;
+    height: 41px;
+    top: 85px;
+    left: 140px;
+}
+
+.heather::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/Shape-cup.png');
+    width: 41px;
+    height: 41px;
+    top: 85px;
+    left: 140px;
+}
+
+.hunter::before {
+    position: absolute;
+    content: "";
+    background-image: url('../img/Shape-plane.png');
+    width: 41px;
+    height: 41px;
+    top: 85px;
+    left: 140px;
+}
+
+.name {
+    margin-bottom: 19px;
+    font-family: 'Montsserat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.about-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.find-other {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 14px 0px 12px;
+    background-color: #ffffff;
+    border: 2px solid #ff4e50;
+    border-radius: 30px;
+    margin-bottom: 70px;
+}
+
+.find-other-link {
+    text-decoration: none;
+    font-family: 'Montsserat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #ff4e50;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .lucas {
+        order: 1;
+    }
+    .hunter {
+        order: 2;
+        align-self: flex-start;
+    }
+    .partner-list-item {
+        margin-bottom: 0;
+    }
+    .bradley, .heather {
+        margin-bottom: 58px;
+    }
+    .partner-list {
+        margin-bottom: 39px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .lucas {
+        order: 1;
+    }
+    .hunter {
+        order: 2;
+    }
+    .partner-list-item {
+        margin-bottom: 39px;
+    }
+    .bradley, .hunter, .heather, .lucas {
+        align-self: flex-start;
+    }
+}
+
+
