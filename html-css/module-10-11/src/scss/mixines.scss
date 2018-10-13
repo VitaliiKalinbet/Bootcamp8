@@ -1,0 +1,34 @@
+@mixin text-decor-mont-700 ($size:$font-size, $ff:'Montserrat', $fw:700, $fst:normal) {
+  font-size: $size;
+  font-family: $ff;
+  font-weight: $fw;
+  font-style: $fst;
+}
+
+@mixin text-decor-mont-400 ($size:$font-size, $ff:'Montserrat', $fw:400, $fst:normal) {
+  font-size: $size;
+  font-family: $ff;
+  font-weight: $fw;
+  font-style: $fst;
+}
+
+@mixin text-decor-rob-400 ($size:$font-size, $ff:'Roboto' sans-serif, $fw:400, $fst:normal) {
+  font-size: $size;
+  font-family: $ff;
+  font-weight: $fw;
+  font-style: $fst;
+}
+
+@mixin text-decor-rob-300-italic ($size:$font-size, $ff:'Roboto' sans-serif, $fw:400, $fst:italic) {
+  font-size: $size;
+  font-family: $ff;
+  font-weight: $fw;
+  font-style: $fst;
+}
+
+@mixin text-decor-kaush-400-italic ($size:$font-size, $ff:'Kaushan Script' sans-serif, $fw:400, $fst:italic) {
+  font-size: $size;
+  font-family: $ff;
+  font-weight: $fw;
+  font-style: $fst;
+}

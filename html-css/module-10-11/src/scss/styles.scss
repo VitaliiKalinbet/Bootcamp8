@@ -1,0 +1,442 @@
+@import 'normalize';
+@import 'fonts';
+@import 'variables';
+@import 'mixines';
+
+.header {
+  margin: 0 auto;
+  background: $linear-gradient, url('../img/eagle@1X.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  &__nav {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  margin-bottom: 164px;
+
+    &--link {
+      text-decoration: none;
+      align-self: flex-start;
+
+      &-title {
+        @include text-decor-mont-700(30px);
+        color: $color-white;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 15px;
+
+    &--item {
+      box-sizing: border-box;
+      padding-bottom: 12px;
+    }
+
+    &--item:nth-child(-n+5):hover {
+      border-bottom: 3px solid $color-hover-menu;
+      padding-bottom: 12px;
+    }
+
+    &--item:hover a {
+      color: $color-hover-menu;
+    }
+
+    &--item:nth-child(-n+5) {
+      margin-right: 58px;
+    }
+
+    &--item:nth-child(6) {
+      margin-right: 42px;
+    }
+
+    &--item-link {
+      text-decoration: none;
+      @include text-decor-mont-400(14px);
+      color: $color-white;
+      text-transform: uppercase;
+    }
+
+    &--item-cart {
+      width: 17.6px;
+      height: 14.03px;
+      fill: $color-white;
+    }
+
+    &--item-cart:hover {
+      fill: $color-hover-menu;
+    }
+
+    &--item-glass {
+      width: 17.6px;
+      height: 17.6px;
+    }
+
+    &--item-glass {
+      fill: $color-white;
+    }
+
+    &--item-glass:hover {
+      fill: $color-hover-menu;
+    }
+  }
+
+  &__info {
+    padding-bottom: 225px;
+  }
+
+  &__info--creative {
+    width: 515px;
+    margin: 0 auto;
+    @include text-decor-kaush-400-italic(72px);
+    margin-bottom: 42px;
+    color: $color-white;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__info--welcome {
+    width: 840px;
+    margin: 0 auto;
+    @include text-decor-mont-700(150px);
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: center;
+    margin-bottom: 124px;
+  }
+
+  &__info--link {
+    width: 160px;
+    margin: 0 auto;
+    border: 3px solid $color-white;
+    padding: 15px 32px 14px 33px;
+    color: $color-white;
+    @include text-decor-mont-700(14px);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+  // скобка всего хедра
+
+.services {
+  margin-bottom: 92px;
+  &__title {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    @include text-decor-kaush-400-italic(24px);
+    color: $color-black;
+    margin-top: 50px;
+    margin-bottom: 22px;
+    text-transform: capitalize;
+  }
+
+  &__subtitle {
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    @include text-decor-mont-700(30px);
+    color: $color-black;
+    margin-bottom: 110px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  &__subtitle:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: $color-after;
+    left: 126px;
+    top: 72px;
+  }
+
+  &__list {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__list--item {
+    width: 340px;
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 100px;
+
+    &-alarm {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+    &-graph {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+    &-computer {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+    &-book {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+    &-home {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+    &-image {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+
+    &-title {
+      @include text-decor-mont-400(14px);
+      color: $color-black;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    &-about {
+      @include text-decor-mont-400(15px);
+      color: #b6b6b6;
+    }
+  }
+}
+
+.team {
+  margin-bottom: 82px;
+
+  &__title {
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    @include text-decor-kaush-400-italic(24px);
+    color: $color-black;
+    margin-top: 50px;
+    margin-bottom: 22px;
+    text-transform: capitalize;
+  }
+
+  &__subtitle {
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    @include text-decor-mont-700(30px);
+    color: $color-black;
+    margin-bottom: 91px;
+    text-transform: uppercase;
+    position: relative;
+
+    &--about {
+      width: 970px;
+      text-align: center;
+      margin: 0 auto;
+      @include text-decor-rob-400(15px);
+      color: $color-black;
+      margin-bottom: 90px;
+    }
+  }
+
+  &__subtitle:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: $color-after;
+    left: 126px;
+    top: 72px;
+  }
+
+  &__img-pop-up {
+    position: relative;
+  }
+
+  &__list {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &--item {
+      width: 380px;
+
+      &-name{
+        @include text-decor-mont-400(14px);
+        color: #333333;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      &-profession {
+        @include text-decor-rob-300-italic(15px);
+        color: #cacaca;
+        text-align: center;
+      }
+    }
+  }
+
+  &__pop-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    // padding: 208px 76px 209px 77px;
+    width: 100%;
+    height: 100%;
+    background: $linear-gradient;
+    display: none;
+
+    &--item:nth-child(-n+3) {
+      margin-right: 2px;
+    }
+
+    &--link {
+      width: 56px;
+      height: 56px;
+      background-color: $color-hover-menu;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--link:hover {
+      background-color: $color-social-icons;
+    }
+
+    &--link:hover svg {
+      fill: $color-white;
+    }
+
+    &--svg {
+      fill: $color-social-icons;
+      height: 26px;
+    }
+
+    &--facebook {
+      width: 13px;
+    }
+
+    &--twitter {
+      width: 26px;
+      height: 22px;
+    }
+
+    &--pinterest {
+      width: 21px;
+    }
+
+    &--instagram {
+      width: 26px;
+    }
+  }
+
+  &__img-pop-up:hover ul {
+    display: flex;
+  }
+
+  &__img-pop-up:hover {
+    box-shadow: 11px 11px 0 0 #95e1d3;
+    transform: translate(-11px, -11px);
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+  }
+}
+
+.footer {
+  border-top: solid 1px #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+
+  &__license {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 23px;
+    align-items: center;
+    width: 295px;
+
+    &--about {
+      @include text-decor-mont-400(14px);
+    }
+
+    &--link {
+      display: block;
+      text-decoration: none;
+      color: #f6a6a6;
+      @include text-decor-mont-400(14px);
+      text-transform: capitalize;
+    }
+  }
+
+  &__info {
+    display: flex;
+    width: 470px;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 11px;
+
+    &--email{
+      padding: 13px 142px 12px 13px;
+      border: solid 1px #e5e5e5;
+      border-right: none;
+    }
+
+    &--email::placeholder {
+      @include text-decor-rob-300-italic(15px);
+      text-transform: capitalize;
+    }
+
+    &--subscribe {
+      text-transform: uppercase;
+      background-color: #95e1d3;
+      @include text-decor-mont-700(14px);
+      color: #ffffff;
+      padding: 14px 33px;
+      border: none;
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+.header {
+    background: $linear-gradient, url('../img/eagle@2X.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+   }
+}
