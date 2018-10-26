@@ -171,10 +171,10 @@
 //  3.1) Если варианты совпали алерт вы выиграли
 //  3.2) Если вариант не совпал вы проиграли
 // let animals = ["cat","dog","rabbit","bird","fish"];
-// let myChoice = prompt ('Выберите ваш вариант животного: cat, dog, rabbit, bird, fish');
 // let random = Math.floor((Math.random()*animals.length));
 // let compChoice = animals[random];
 // console.log(compChoice);
+// let myChoice = prompt ('Выберите ваш вариант животного: cat, dog, rabbit, bird, fish');
 // if (myChoice === compChoice) {
 //     alert('You win');
 // } else {
