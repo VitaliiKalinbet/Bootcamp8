@@ -283,10 +283,39 @@
 // За допомогою метода addMethod(name, function) додати в калькулятор новий функціонал який буде знаходити різницю всіх введених цифр які отримали при використанні метода read();
 
 // function Calculator() {
-
+//   this.numbers = [];
+//   this.read = function() {
+//     let number;
+//     do {
+//       number = prompt('Введите число');
+//       if (number !== null && !isNaN(number)) {
+//       this.numbers.push(Number(number));
+//     } 
+//     }
+//     while (number !== null);
+//   }
+//   this.sum = function () {
+//     return this.numbers.reduce((acc, el) => acc + el, 0);
+//   }
+//   this.mul = function () {
+//     return this.numbers.reduce((acc,el) => acc*el, 1);
+//   }
+//   this.addMethod = function (name, fun) {
+//     this[name] = fun;
+//   }
 // }
 
-// let calculator = new Calculator();
+// function minus () {
+//   return this.numbers.reduce((acc, el) => acc - el);
+// };
+
+// let mass = new Calculator();
+// mass.read();
+// console.log(`Наш массив из чисел: ${mass}`);
+// console.log(`Сумма всех чисел ${mass.sum()}`);
+// console.log(`Произведение всех числе: mass.mul()`);
+// mass.addMethod('m',minus);
+// console.log(`Результат вычитания всех чисел: ${mass.m()}`);
 
 // console.log(calculator.read()); // вводимо 5 цифр (1,2,3,4,5) після цього натискаємо Cancel і метод read() зупиняє роботу
 
