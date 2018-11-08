@@ -31,7 +31,7 @@ availHeight - полезное расширение экрана без меню
 // href: "https://www.w3schools.com/js/js_varia
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!! Обьект history - история. Ситуативный обьект, который обновляется каждый раз при загрузке заново сайта!!!!!!!!!!!!!!!
-console.log(history);
+// console.log(history);
 // записываются данные на каких ссылках мы были пока не дошли до текущего положения
 // length: 7
 // back: ƒ back()  - возвращает назад на одну страницу
@@ -50,3 +50,35 @@ get scrollRestoration: ƒ ()
 set scrollRestoration: ƒ ()
 get state: ƒ ()
 __proto__: Object */ 
+
+
+function showLocation(position) {
+    console.log(position);
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    alert("Latitude : " + latitude + " Longitude: " + longitude);
+ }
+
+ function errorHandler(err) {
+    if(err.code == 1) {
+       alert("Error: Access is denied!");
+    } else if( err.code == 2) {
+       alert("Error: Position is unavailable!");
+    }
+ }
+
+ function getLocation() {
+
+    if(navigator.geolocation) {
+
+       navigator.geolocation.getCurrentPosition(showLocation, errorHandler);
+    } else {
+       alert("Sorry, browser does not support geolocation!");
+    }
+ }
+
+getLocation();
+
+
+// console.log(navigator.geolocation.getCurrentPosition());
+// console.log(navigator.geolocation.getCurrentPosition);

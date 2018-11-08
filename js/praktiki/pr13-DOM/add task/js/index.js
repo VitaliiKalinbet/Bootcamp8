@@ -150,3 +150,73 @@
   Используйте createElement для создания узлов.
   Добавьте классы и атрибуты.
 */
+
+// function createPostCard() {
+//   // div class="post"
+//   let root = document.querySelector('#root');
+//   let divPost = document.createElement('div');
+//   divPost.classList.add('post');
+//     // img class="post__image"
+//     let imgPostImage = document.createElement('img');
+//     imgPostImage.classList.add('post__image');
+//     imgPostImage.setAttribute('src', 'http://via.placeholder.com/400x150');
+//     imgPostImage.setAttribute('alt', 'post image');
+//     divPost.append(imgPostImage);
+//     // h2 class="post__title"
+//     let h2PostTitle = document.createElement('h2');
+//     h2PostTitle.classList.add('post__title');
+//     h2PostTitle.textContent = 'Lorem ipsum dolor';
+//     divPost.append(h2PostTitle);
+//     // p class="post__text"
+//     let pPostText = document.createElement('p');
+//     pPostText.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!';
+//     divPost.append(pPostText);
+//     // a class="button" href="#"
+//     let aButton = document.createElement('a');
+//     aButton.classList.add('button');
+//     aButton.setAttribute('href', '#');
+//     aButton.textContent = 'Read more';
+//     divPost.append(aButton);
+//   root.append(divPost);
+// };
+// createPostCard();
+
+
+
+/*
+ЗАДАНИЕ 7
+
+  В HTML-документе уже есть тег с id="root" (вкладка HTML)
+  
+  Создайте функцию createBoxes(num), которая принимает 1 параметр num - число.
+  
+  Функция создает столько div, сколько указано в num и возвращает их в одном
+  общем контейнере. После чего необходимо повесить результат работы функции
+  в div с id="#root"
+  
+  Каждый div:
+    - Имеет случайный rgb цвет фона
+    - Размеры самого первого div - 30px на 30px.
+    - Каждый следующий div после первого, должен быть шире и выше предыдущего
+      на 10px
+*/
+
+function createBoxes(num) {
+  let root = document.querySelector('#root');
+  let divAll = document.createElement('div');
+  let widthValue = 50;
+  let heightValue = 30;
+  for (let i=1; i<=num; i+=1) {
+    let divSmall = document.createElement('div');
+    divSmall.style.width = `${widthValue}px`;
+    divSmall.style.height = `${heightValue}px`;
+    divSmall.style.backgroundColor = `rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)})`;
+    divSmall.style.margin = `auto`;
+    divSmall.style.marginBottom = `10px`;
+    divAll.append(divSmall);
+    widthValue += 10;
+    heightValue += 10;
+  };
+  return root.append(divAll);
+};
+createBoxes(5);
