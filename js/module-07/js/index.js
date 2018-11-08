@@ -25,18 +25,9 @@ const posts = [
   1. Модифицируйте готовую функцию createPostCard() из задания 
     номер 6 (https://codepen.io/goit-fe-adv/pen/MVPaeZ) так, 
     чтобы она принимала объект post с данными для заполнения полей 
-    в карточке.
-
-  2. Создайте функцию createCards(posts), которая принимает массив
-  объектов-карточек, вызывает функцию createPostCard(post) столько
-  раз, сколько объектов в массиве, сохраняя общий результат и возвращает 
-  массив DOM-элементов всех постов. 
-  
-  3. Повесьте все посты в какой-то уже существующий DOM-узел. */
-
+    в карточке. */
 
   function createPostCard(obj) {
-    let root = document.querySelector('#root');
       // div class="post"
       let divPost = document.createElement('div');
       divPost.classList.add('post');
@@ -61,15 +52,23 @@ const posts = [
         aButton.setAttribute('href', '#');
         aButton.textContent = obj.link;
         divPost.append(aButton);
-        root.append(divPost);
+        return divPost;
     };
+
+    /* 2. Создайте функцию createCards(posts), которая принимает массив
+    объектов-карточек, вызывает функцию createPostCard(post) столько
+    раз, сколько объектов в массиве, сохраняя общий результат и возвращает 
+    массив DOM-элементов всех постов. 
+    
+    3. Повесьте все посты в какой-то уже существующий DOM-узел. */
     
     function createCards(arr) {
-        let arrOfArr = [];
+      let root = document.querySelector('#root');
+        let arrOfArr;
         for (let el of arr) {
             arrOfArr = createPostCard(el);
+            root.append(arrOfArr);
         }
-        return arrOfArr;
     };
     createCards(posts);
    
