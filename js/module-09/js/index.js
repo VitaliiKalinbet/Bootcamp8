@@ -176,6 +176,7 @@ class Stopwatch {
                 this.buttonReset = document.createElement('button');
                 this.buttonReset.classList.add('js-reset');
                 this.buttonReset.textContent = 'Reset';
+                this.buttonReset.setAttribute('disabled', 'true')
                 divTimer.append(this.pResult, this.buttonStart, this.buttonTakeLap, this.buttonReset);
             this.listLap = document.createElement('ul');
             this.listLap.classList.add('laps');
@@ -187,7 +188,6 @@ class Stopwatch {
         this.buttonTakeLap.addEventListener('click', this.takeLoap);
         this.buttonReset.addEventListener('click', this.resetTimer);
     }
-
     // Методы класса:
     startTimer() {
         if (!this.timer.isActive && this.buttonStart.textContent === 'Start') {
@@ -221,6 +221,7 @@ class Stopwatch {
         this.timer.isActive = false;
         this.buttonReset.disabled = true;
         this.buttonStart.textContent = 'Start';
+        buttonReset.disabled = true;
     };
 
     nowtimeMinusStarttime() {
