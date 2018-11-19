@@ -145,7 +145,7 @@ input {
 
    /* ===============================================================================================
 Задание 3 */
-.btn {
+/* .btn {
   position: absolute;
   padding: 20px 30px;
   border-radius: 5px;
@@ -159,7 +159,7 @@ input {
   font-size: 30px;
   transition: 0.3s ease all;
   /* transform: translate(-50%); */
-}
+/* }
 .win {
   background-color: green;
 }
@@ -182,4 +182,414 @@ input {
 }
 .hide {
   display: none;
+} */ 
+
+   /* ===============================================================================================
+Задание 4    КАЛЬКУЛЯТОР*/
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.calculator, .sum, .minus, .mult, .divide, .pow, .get-Value {
+  margin: auto;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.calculator{
+  font-size: 60px;
+  color: #190cd1;
+}
+.et-Value {
+  background-color: rgb(189, 155, 155);
+}
+.sum {
+  background-color: rgb(228, 79, 79);
+}
+.minus{
+  background-color: rgb(63, 206, 206);
+}
+.mult{
+  background-color: rgb(79, 228, 116);
+  text-align: center;
+}
+.divide{
+  background-color: rgb(228, 79, 196);
+}
+.pow{
+  background-color: rgb(213, 228, 79);
+}
+#sum, #minus, #mult, #divide, #pow {
+  font-size: 30px;
+  color: rgb(6, 90, 48);
+} */
+
+   /* ===============================================================================================
+МОДУЛЬ 8 Дополнительное Задание №4   */
+/* body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+.options input {
+  margin: 0;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.btn {
+  font-size: 24px;
+  padding: 4px 32px;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 32px;
+} */
+
+
+/* ===============================================================================================
+МОДУЛЬ 8 Дополнительное Задание №5   */
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.images {
+  display: grid;
+  width: 656px;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 320px);
+  grid-gap: 8px;
+  list-style: none;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+ */
+
+
+
+ /* ===============================================================================================
+МОДУЛЬ 8 Дополнительное Задание №6   */
+/* body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.list {
+  margin: 0;
+  padding: 16px;
+  outline: 2px solid teal;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 24px;
+  outline: 2px solid #212121;
+}
+
+.list li:not(:last-child) {
+   margin-bottom: 8px;
+}
+
+.list button {
+  margin-right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: inherit;
+} */
+
+ /* ===============================================================================================
+МОДУЛЬ 8 Дополнительное Задание №7   */
+/*
+  Дан набор инпутов. Сделайте так, чтобы при потере фокуса все 
+  инпуты проверяли свое содержимое на правильное количество символов. 
+  
+  Сколько символов должно быть в инпуте, указывается в атрибуте data-length. 
+  Если введено подходящее количество, то outline инпута становится зеленым, 
+  если неправильное - красным. 
+*/
+/* body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  outline: 2px solid teal;
+}
+
+.inputs input {
+  padding: 4px;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-family: inherit;
+} */
+
+ /* ===============================================================================================
+МОДУЛЬ 8 Дополнительное Задание №8   */
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.input {
+  display: inline-block;
+  margin-bottom: 16px;
+  border: none;
+  width: 360px;
+  height: 42px;
+  padding: 8px;
+  background-color: #e9e9e9;
+  font-family: inherit;
+  font-size: 24px;
+  color: #2a2a2a;
+}
+
+.input:focus {
+  outline-color: #2a2a2a;
+}
+
+.input-value {
+  color: #2a2a2a;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+} */
+
+ /* ===============================================================================================
+МОДУЛЬ 8 Дополнительное Задание №9   */
+/* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 45, 58, 0.7);
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 650px;
+  min-height: 380px;
+  padding: 50px 80px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px rgba(1, 2, 2, 0.2);
+  border-radius: 2px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-image: url("https://image.flaticon.com/icons/png/512/64/64146.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+.modal-title {
+  margin-bottom: 15px;
+  color: #2a2a2a;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.modal-text {
+  margin-bottom: 15px;
+  color: #676767;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-form-input {
+  display: inline-block;
+  margin-bottom: 15px;
+  border: none;
+  width: 360px;
+  height: 42px;
+  padding: 10px;
+  background-color: #e9e9e9;
+  font-family: inherit;
+  font-size: 14px;
+  color: #676767;
+}
+
+.sub-form-input:focus {
+  outline-color: #2a2a2a;
+}
+
+.sub-form-input::placeholder {
+  color: #ababab;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.sub-form-btn {
+  border: none;
+  width: 115px;
+  height: 42px;
+  background-color: #2a2a2a;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(1, 2, 2, 0.2);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 74px;
+  text-transform: uppercase;
+  line-height: 42px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn {
+  border: none;
+  width: 115px;
+  height: 42px;
+  background-color: #2a2a2a;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(1, 2, 2, 0.2);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 74px;
+  text-transform: uppercase;
+  line-height: 42px;
+  cursor: pointer;
+  font-family: inherit;
+} */
+
+ /* ===============================================================================================
+МОДУЛЬ 8 Дополнительное Задание №10   */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 50px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu-link {
+  display: block;
+  padding: 20px 25px;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #212121;
+  transition: background-color 0.1s linear;
+}
+
+.menu-link-active {
+  background-color: #FF4081;
+  color: #ffffff;
 }

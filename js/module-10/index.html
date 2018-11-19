@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- текущий список всех пользователей в БД -->
+        <button class="mdc-btn-all js-get-all-users" type="submit">список всех пользователей БД</button>
+        <button class="mdc-btn-all js-get-all-users-delete" type="submit">удалить список всех пользователей БД</button>
+        <div class="resultAllUsers"></div>
+        <!-- пользователь с переданным id -->
+        <form class="search-form">
+        <input type="text" placeholder="Введите id пользователя">
+        <button class="mdc-btn js-post" type="submit">поиск в бд</button>
+        </form>
+        <div class="result"></div>
+        <!-- записывать в БД юзера с полями name и age -->
+        <form class="add-form">
+        <p>ДОБАВИТЬ ПОЛЬЗОВАТЕЛЯ В БД</p>
+        <input class="add-input name" type="text" placeholder="Введите имя">
+        <input class="add-input age" type="text" placeholder="Введите возраст">
+        <button class="mdc-btn add-user js-add" type="submit">записать в бд</button>
+        <p class="p-add-user-about">Увидеть добавленного пользователя можете нажав кнопку "Список всех пользователей БД" расположенную выше (пользователь будет добавлен в конец списка)</p>
+        </form>
+        <!-- удалять из БД юзера по указанному id -->
+        <form class="delete-form">
+            <p>УДАЛИТЬ ПОЛЬЗОВАТЕЛЯ ИЗ БД</p>
+            <input class="delete-from-id" type="text" placeholder="Введите id пользователя">
+            <button class="mdc-btn-delete js-delete-id" type="submit">удалить в бд по id</button>
+            <p class="p-add-user-about">Увидеть что пользователь удален можно нажав кнопку "Список всех пользователей БД" расположенную выше</p>
+        </form>
+        <!-- обновлять данные пользователя по id -->
+        <form class="put-form">
+            <p>ИЗМЕНИТЬ ИМЯ И/ИЛИ ВОЗРАСТ ПОЛЬЗОВАТЕЛЯ ПО ID В БД</p>
+            <input class="put-input-id" type="text" placeholder="Введите id пользователя">
+            <input class="put-input-name" type="text" placeholder="Введите новое имя">
+            <input class="put-input-age" type="text" placeholder="Введите новый возраст">
+            <button class="mdc-btn put-user js-add" type="submit">записать в бд</button>
+            <p class="p-add-user-about">Увидеть измененного пользователя можно нажав кнопку "Список всех пользователей БД" расположенную выше (если при первом открытии сервера значение имени и/или возраста по id не поменялось: 1) Убедитесь что вводите корректый id без пробелов; 2)  </p>
+        </form>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
