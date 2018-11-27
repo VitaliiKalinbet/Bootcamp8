@@ -1,0 +1,119 @@
+1) npm i create-react-app -g
+это просто пакет для создания реакта
+который поставился глобально на компьютер (в папку ноде модулес на диске С) 
+Это команда которая устанавливает сборку фейсбука на компьютер, и теперь мы можем открывать 
+готовые реакт проекты (дает возможность создать новую папку с новым проектом на реакте, 
+со всеми нужными зависимостями, папками, пакеты)
+
+если нпм версии 5.2 и выше нужно использовать команду
+npx npm i create-react-app -g
+
+
+2) create-react-app intro_react
+создаем стандартную сборку реакта (create-react-app) и название папки придумываем (intro_react)
+
+3) React Extension Pack
+в VS code расширение устанавливаем, и перезагружаем реакт
+СОКРАЩЕНИЯ
+Snippets
+Below is a list of all available snippets and the triggers of each one. The ? means the TAB key.
+
+https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets
+
+Trigger	Content
+rcc>	class component skeleton
+rrc>	class component skeleton with react-redux connect
+rccp>	class component skeleton with prop types after the class
+rcjc>	class component skeleton without import and default export lines
+rcfc>	class component skeleton that contains all the lifecycle methods
+rwwd>	class component without import statements
+rpc>	class pure component skeleton with prop types after the class
+rsc>	stateless component skeleton
+rscp>	stateless component with prop types skeleton
+rsf>	stateless named function skeleton
+rsfp>	stateless named function with prop types skeleton
+rpt>	empty propTypes declaration
+rdp>	empty defaultProps declaration
+con>	class default constructor with props
+conc>	class default constructor with props and context
+est>	empty state object
+cwm>	componentWillMount method
+cdm>	componentDidMount method
+cwr>	componentWillReceiveProps method
+scu>	shouldComponentUpdate method
+cwup>	componentWillUpdate method
+cdup>	componentDidUpdate method
+cwun>	componentWillUnmount method
+gsbu>	getSnapshotBeforeUpdate method
+gdsfp>	static getDerivedStateFromProps method
+cdc>	componentDidCatch method
+ren>	render method
+sst>	this.setState with object as parameter
+ssf>	this.setState with function as parameter
+props>	this.props
+state>	this.state
+bnd>	binds the this of method inside the constructor
+The following table lists all the snippets that can be used for prop types. Every snippet regarding prop types begins with pt so it's easy to group it all together and explore all the available options. On top of that each prop type snippets has one equivalent when we need to declare that this property is also required. For example pta creates the PropTypes.array and ptar creates the PropTypes.array.isRequired
+
+Trigger	Content
+pta>	PropTypes.array,
+ptar>	PropTypes.array.isRequired,
+ptb>	PropTypes.bool,
+ptbr>	PropTypes.bool.isRequired,
+ptf>	PropTypes.func,
+ptfr>	PropTypes.func.isRequired,
+ptn>	PropTypes.number,
+ptnr>	PropTypes.number.isRequired,
+pto>	PropTypes.object,
+ptor>	PropTypes.object.isRequired,
+pts>	PropTypes.string,
+ptsr>	PropTypes.string.isRequired,
+ptnd>	PropTypes.node,
+ptndr>	PropTypes.node.isRequired,
+ptel>	PropTypes.element,
+ptelr>	PropTypes.element.isRequired,
+pti>	PropTypes.instanceOf(ClassName),
+ptir>	PropTypes.instanceOf(ClassName).isRequired,
+pte>	PropTypes.oneOf(['News', 'Photos']),
+pter>	PropTypes.oneOf(['News', 'Photos']).isRequired,
+ptet>	PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+ptetr>	PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+ptao>	PropTypes.arrayOf(PropTypes.number),
+ptaor>	PropTypes.arrayOf(PropTypes.number).isRequired,
+ptoo>	PropTypes.objectOf(PropTypes.number),
+ptoor>	PropTypes.objectOf(PropTypes.number).isRequired,
+ptoos>	PropTypes.objectOf(PropTypes.shape()),
+ptoosr>	PropTypes.objectOf(PropTypes.shape()).isRequired,
+ptsh>	PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}),
+ptshr>	PropTypes.shape({color: PropTypes.string, fontSize: PropTypes.number}).isRequired,
+Categories
+Snippets
+Tags
+snippet
+Resources
+Repository
+Download Extension
+Project Details
+xabikos/vscode-react
+3 Pull Requests
+3 Open Issues
+Last commit: 2 months ago
+More Info
+Version
+2.2.1
+Released on
+17.11.2015, 22:54:33
+Last updated
+07.10.2018, 12:21:12
+Publisher
+charalampos karypidis
+Unique Identifier
+xabikos.ReactSnippets
+Report
+Report Abuse
+
+4) https://github.com/facebook/react-devtools
+Как установить инструменты разработчика в хроме, мозилле 
+Устанавливаем расширение по ссылке с гита, а потом "Управление расширениями" - "Разрешить открывать с локальными файлами"
+
+

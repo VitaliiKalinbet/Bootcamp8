@@ -85,7 +85,6 @@
 // const container = document.querySelector('.content-placeholder');
 // container.innerHTML = markup;
 
-
 /* ============================================================================================
 // Задача от Вовы №3*/
 // const menuData = {
@@ -140,7 +139,6 @@
 // let mark = tmp(data);
 // let container = document.querySelector('.content-placeholder');
 // container.innerHTML = mark;
-
 
 /* ============================================================================================
 Задача от Вовы №5*/

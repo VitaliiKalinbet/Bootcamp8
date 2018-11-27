@@ -130,7 +130,7 @@
 // +88(0214)12 25 21 3
 
 // ===================================================================================================
-// /\b\d{1,6}\.?\D{1,3}/g
+// /\b\d{1,}\.?\d{1,}/g
 // 45px
 // 458.2rem
 // 1.123647em
@@ -147,11 +147,123 @@
 Якщо пошта правильна намалювати під формою параграф з текстом
 "Пошта валідна"
 Якщо пошта не правильна намалювати параграф з текстом "Пошта неправильна" */
-let form = document.querySelector('form');
-let inputEmail = document.querySelector('[type="text"]');
-let regV = /^[a-zA-Z0-9]+@[a-zA-Z0-9]{2,5}\.com/g;
-function check(e) {
-    e.preventDefault();
-    console.log(regV.test(inputEmail.value));
+// let form = document.querySelector('form');
+// let inputEmail = document.querySelector('[type="text"]');
+// let regV = /^[a-zA-Z0-9]+@\w{2,5}\.com$/;
+// function check(e) {
+//     e.preventDefault();
+//     console.log(regV.test(inputEmail.value));
+// }
+// form.addEventListener('submit', check);
+
+// ====================================================================================================
+// Module 11 ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА 1
+/*
+  К pen уже подключен Handlebars.
+  
+  Создайте шаблон списка указаного во вкладке HTML.
+  
+  Отрендерите список в DOM по данным из массива listItems.
+*/
+// const listItems = [
+//     { name: 'item 1', count: 2 },
+//     { name: 'item 2', count: 4 },
+//     { name: 'item 3', count: 12 },
+//     { name: 'item 4', count: 29 },
+// ];
+// // 1) Получить доступ к шаблону
+// const template = document.querySelector('#addres-template').innerHTML.trim();
+// // 2) Запустить функцию шаблонизатор 
+// const templateRun = Handlebars.compile(template);
+// // 3) Обработать информацию. Передаем в функцию обьект
+// const templateRunWithObject = templateRun({listItems});
+// console.log(templateRunWithObject);
+// // 4) Готовую разметку вставить на экран 
+// const container = document.querySelector('.content-placeholder');
+// container.innerHTML = templateRunWithObject;
+
+// ====================================================================================================
+// Module 11 ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА 2
+/*
+  К pen уже подключен Handlebars.
+  
+  Создайте шаблон поста указаного во вкладке HTML.
+  Отрендерите список постов в DOM по данным из массива posts.
+  
+  Если в объекте поле isFav=true, в посте должна быть 
+  разметка иконки избранного поста, в противном случае
+  разметки иконки быть не должно.
+  
+  Используйте эту иконку для фона:
+  https://image.flaticon.com/icons/svg/290/290413.svg
+*/
+// const posts = [
+//     { title: "post 1", text: "text 1", isFav: true },
+//     { title: "post 2", text: "text 2", isFav: false },
+//     { title: "post 3", text: "text 3", isFav: true },
+//     { title: "post 4", text: "text 4", isFav: false }
+//   ];
+// // 1) Получить доступ к шаблону
+// const template = document.querySelector('#addres-template').innerHTML.trim();
+// // 2) Запустить функцию шаблонизатор 
+// const templateRun = Handlebars.compile(template);
+// // 3) Обработать информацию. Передаем в функцию обьект
+// const templateRunWithObject = templateRun(posts);
+// // 4) Готовую разметку вставить на экран 
+// const container = document.querySelector('.content-placeholder');
+// container.innerHTML = templateRunWithObject;
+
+
+// ====================================================================================================
+// Module 11 ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА 3
+/* 
+  Напишите функцию validate которая проверяет поля формы 
+  firstname и lastname и возвращает результат в виде 
+  обьекта со свойствами 'first name' и 'last name'.
+  
+  Кроме того, формат объекта: в свойства записывается буль-флаг 
+  уведомляющий о статусе прохождения валидации для каждого поля.
+  {
+    'first name': true или false,
+    'last name': true или false,
+  }
+
+  Критерии валидации:
+  1)Имя. Допускается не более 2-х слов, разделенных пробелами
+  или дефисом. Слова должны состоять только из букв.
+  
+  2)Фамилия. Допускается не более 2-х слов, разделенных пробелами
+  или дефисом. Слова должны состоять только из букв.
+  
+  При клике на кнопку submit должна происходить проверка.
+  Результат проверки, объект, выводить в консоль.
+*/
+
+const firstname = document.getElementById("first_name");
+const lastname = document.getElementById("last_name");
+const submitBtn = document.getElementById("submit-btn");
+function validate(evt) {
+    evt.preventDefault();
+    let regvFirstName = /^[a-zA-z]+(\s|-)?[a-zA-z]+$/;
+    let regvLastName = /^[a-zA-z]+(\s|-)?[a-zA-z]+$/;
+    const objFromValidate = {};
+    if (regvFirstName.test(firstname.value) & regvLastName.test(lastname.value)) {
+        objFromValidate.firstName = true;
+        objFromValidate.lastName = true;
+        console.log(objFromValidate);
+    } else {
+        alert('Введите корректно имя и фамилию');
+        if (regvFirstName.test(firstname.value)) {
+            objFromValidate.firstName = true;
+        } else {
+            objFromValidate.firstName = false;
+
+        }if (regvLastName.test(lastname.value)) {
+            objFromValidate.lastName = true;
+        } else {
+            objFromValidate.lastName = false;
+        }
+        console.log(objFromValidate);
+    }
 }
-form.addEventListener('submit', check);
+submitBtn.addEventListener("click", validate);

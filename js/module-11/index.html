@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- сделать шаблон на карточку
+создать два дива в которые положим: форму и карточки в нужном количестве  -->
+
+<template id='cardProduct'>
+{{#each this}}
+    <div class="product-item"> 
+            <img src={{img}}>
+            <div class="product-list">
+                <h3>{{name}}</h3>
+                <p class="price">&#8372; {{price}}</p>
+                <p class="size">Monitor size: {{size}}</p>
+                <p class="color">Color: {{color}}</p>
+                <p class="release_date">Release date: {{release_date}}</p>
+                <p class="descr">{{descr}}</p>
+            </div>
+    </div>
+{{/each}}
+</template>
+
+<!-- Дивы в которых будет находится результат -->
+<div class="allresult">
+<div class="formPlace">
+        <form class="form js-form">
+                <section>
+                    <h2>Screen size</h2>
+                    <ul>
+                    <li><label><input class="input13" type="checkbox" name="size" value="13"> 13"</label></li>
+                    <li><label><input type="checkbox" name="size" value="15"> 15"</label></li>
+                    <li><label><input type="checkbox" name="size" value="17"> 17"</label></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Color</h2>
+                    <ul>
+                    <li><label><input type="checkbox" name="color" value="white"> white</label></li>
+                    <li><label><input type="checkbox" name="color" value="gray"> gray</label></li>
+                    <li><label><input type="checkbox" name="color" value="black"> black</label></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Release date</h2>
+                    <ul>
+                    <li><label><input type="checkbox" name="release_date" value="2015"> 2015</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2016"> 2016</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
+                    </ul>
+                </section>
+                <button class="btn-filter" type="submit">Filter</button>
+                <button class="btn-clear" type="reset">Clear</button>
+            </form>
+</div>
+    <div class="cardProductPlace"></div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
