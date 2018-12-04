@@ -1,0 +1,75 @@
+.App {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.news-list{
+  list-style: none;
+  padding: 0;
+}
+
+.news-list-item {
+  font-size: 20px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
+.refresh{
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid black;
+  outline: none;
+  background-color: beige;
+  box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.p-in-table{
+  border: 2px solid black;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-in-table-l-r {
+  margin: 0 auto;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.p-in-table-l-r:last-child {
+  border-bottom: 2px solid black;
+}
+
+.img-arrow {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.another-background {
+  background-color: aqua;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+.count {
+  border: 1px solid black;
+}

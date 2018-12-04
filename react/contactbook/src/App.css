@@ -1,0 +1,17 @@
+.contact-books {
+  display: flex;
+  flex-direction: column;
+}
+
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.divbtnAdd{
+  display: flex;
+  justify-content: center;
+  padding: 100px 0; 
+}
+
