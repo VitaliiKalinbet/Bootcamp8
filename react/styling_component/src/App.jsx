@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from './Card/Card';
 import styles from './App.css';
+import Button from './Button/Button';
 import './App.css';
 
 class App extends Component {
@@ -75,20 +76,34 @@ state = {
     }
   ],
   arrOfProperties: [],
-}
+  arrOfTemplates: [],
+};
 
   render() {
-    const {arrOfProperties} = this.state;
+    const {arrOfProperties, arrOfTemplates} = this.state;
     return (
       <div className={styles.App}>
-        {arrOfProperties.map(el => <Card templates={this.state.templates} full_address={el.full_address} image={el.images[0]} area={el.area} price={el.price}/>)}
-        
+        <div className={styles.place_btn}>
+          {arrOfTemplates.map(el => <Button text={el.id}/>)}
+        </div>
+        {arrOfProperties.map(el => <Card templates={this.state.arrOfTemplates} full_address={el.full_address} image={el.images[0]} area={el.area} price={el.price}/>)}
       </div>
     );
-  }
+  };
+
+  differentPatternsInState () {
+    console.log('aaaa');
+    fetch('http://demo4452328.mockable.io/templates')
+    .then(res => res.json())
+    .then(info => this.setState({
+      arrOfTemplates: info,
+    }))
+    .catch(err => console.log(err))
+  };
 
   componentDidMount () {
     this.goToTheLink('http://demo4452328.mockable.io/properties');
+    this.differentPatternsInState();
   };
 
   goToTheLink = (url) => {

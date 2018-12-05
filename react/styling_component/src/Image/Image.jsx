@@ -7,6 +7,7 @@ const Image = ({image, pr, status}) => {
         <div className={styles.box} >
             <img className={styles.img} src={image} alt="some_place"/>
             {pr}
+            {/* <Price .../> */}
         </div>
     );
 };

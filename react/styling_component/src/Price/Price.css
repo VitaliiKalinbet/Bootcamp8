@@ -1,6 +1,8 @@
 .abs {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #fff;
+    top: 5px;
+    left: 20px;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
 }
