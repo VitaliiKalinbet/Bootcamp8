@@ -35,3 +35,15 @@ img {
     width: 1200px;
     margin: 0 auto;
 }
+
+.small-image:hover {
+    cursor: pointer;
+    max-width: 95%;
+    max-height: 95%;
+    margin: auto;
+}
+
+.hover {
+    opacity: .8;
+    border: 3px solid green;
+}

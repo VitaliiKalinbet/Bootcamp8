@@ -76,8 +76,8 @@ function createGallery(obj, arr) {
   for (let el of arr) {
       let previewListItem = document.createElement('li');
         let previewImg = document.createElement('img');
+        previewImg.classList.add('small-image');
         previewImg.setAttribute('src', el.preview);
-        previewImg.setAttribute('data-fullview', el.fullview);
         previewImg.setAttribute('data-fullview', el.fullview);
         previewImg.setAttribute('alt', el.alt);
         previewListItem.append(previewImg);
@@ -86,7 +86,11 @@ function createGallery(obj, arr) {
 
   function showLi() {
     imgFullview.setAttribute('src', event.target.dataset.fullview);
+    if(event.target.tagName === "IMG") {
+      document.querySelectorAll('.small-image').forEach(el => el === event.target ? el.classList.add('hover') : el.classList.remove('hover'))
+    }
   }
+
   previewList.addEventListener('click', showLi);
 }
 
