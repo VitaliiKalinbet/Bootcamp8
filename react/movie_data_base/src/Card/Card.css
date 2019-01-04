@@ -1,0 +1,23 @@
+/* .card{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem;
+    position: relative;
+    margin: 1rem;
+    font-size: 15px;
+}
+
+.delete_icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+}
+
+.delete_icon:hover {
+    cursor: pointer;
+    background-color:gray;
+} */

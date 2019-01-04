@@ -1,0 +1,25 @@
+.info {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 20px;
+    box-shadow: 3px 6px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+@media (min-width: 768px) {
+    .info {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .info {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
+

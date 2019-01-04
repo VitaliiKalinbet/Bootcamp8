@@ -1,0 +1,19 @@
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .btn_submit {
+    margin: 5rem auto 0;
+    padding: 1rem;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+} */
+
+.input {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: aqua;
+}
+
+.form {
+  text-align: center;
+}
+
+.text {
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+.add {
+  background-color: yellowgreen;
+  padding: 16px;
+  margin-left: 5px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.list__item {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: Arial;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list__item:hover {
+  background-color: #fff;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+  background-color: beige;
+}
+
+.img{
+  cursor: pointer;
+}
+
+.three-btn {
+  width: 50%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+
+}

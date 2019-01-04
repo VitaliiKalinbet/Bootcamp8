@@ -1,0 +1,14 @@
+.list_favor_city {
+    font-size: 1rem;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    width: 85%;
+    margin: 0.5rem 0;
+    height: 8rem;
+    /* overflow: auto; */
+    overflow-y: auto;
+};

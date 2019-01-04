@@ -1,0 +1,16 @@
+.list {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color:#000;
+    box-sizing: border-box;
+}
+
+.list a {
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+}

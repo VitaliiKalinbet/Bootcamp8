@@ -1,0 +1,16 @@
+.list_item {
+    margin: 0.25rem;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete_icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: block;
+}
