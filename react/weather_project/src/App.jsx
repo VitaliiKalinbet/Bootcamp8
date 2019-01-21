@@ -33,7 +33,7 @@ class App extends Component {
   }
 
 getAxiosDataWeatherAndPhoto = (nameOfCity) => {
-  Promise.all([axios.get(`https://pixabay.com/api/?key=5018958-ed49ccd90878e6614abdf24a6&q=${`${nameOfCity}` || 'Kiev city'}`), axios.get(`http://api.openweathermap.org/data/2.5/weather?APPID=8defc985a5e2c764076c53bf90c6c44e&units=metric&lang=en&q=${nameOfCity || 'Kiev'}`)])
+  Promise.all([axios.get(`https://pixabay.com/api/?key=5018958-ed49ccd90878e6614abdf24a6&q=${`${nameOfCity}` || 'Kiev city'}`), axios.get(`https://api.openweathermap.org/data/2.5/weather?APPID=8defc985a5e2c764076c53bf90c6c44e&units=metric&lang=en&q=${nameOfCity || 'Kiev'}`)])
   .then( res => {
     // console.log(res);
     this.setState({
@@ -47,7 +47,7 @@ getAxiosDataWeatherAndPhoto = (nameOfCity) => {
   })
   .catch(err => {
     if (err) {
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?APPID=8defc985a5e2c764076c53bf90c6c44e&units=metric&lang=en&q=${nameOfCity || 'Kiev'}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?APPID=8defc985a5e2c764076c53bf90c6c44e&units=metric&lang=en&q=${nameOfCity || 'Kiev'}`)
     .then( res => {
       this.setState({
         background: defaultImg,

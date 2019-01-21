@@ -11,10 +11,10 @@ const Menu = () => {
 
         <ul className={styles.menu}>
             <li>
-                <NavLink className={styles.menu_btn} to='/'>Weather today</NavLink>
+                <NavLink className={styles.menu_btn} to='/'>Today</NavLink>
             </li>
             <li>
-                <NavLink className={styles.menu_btn} to='/five_day'>Weather for five days</NavLink>
+                <NavLink className={styles.menu_btn} to='/five_day'>Five day</NavLink>
             </li>
         </ul>
     );

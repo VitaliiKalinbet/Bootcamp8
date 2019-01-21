@@ -8,6 +8,7 @@ import InfoForDay from '../InfoForDay/InfoForDay';
 import uuidv4 from 'uuid/v4';
 import Loader from 'react-loader-spinner'
 import styles from './Fivedays.css';
+import PropTypes from 'prop-types';
 
 class Fivedays extends Component {
 
@@ -35,7 +36,7 @@ componentDidUpdate (prevProps) {
 }
 
 getWeatherForFiveDays = (nameOfCity) => {
-    axios.get(`http://api.openweathermap.org/data/2.5/forecast?APPID=8defc985a5e2c764076c53bf90c6c44e&units=metric&lang=en&q=${nameOfCity || 'Kiev'}`)
+    axios.get(`https://api.openweathermap.org/data/2.5/forecast?APPID=8defc985a5e2c764076c53bf90c6c44e&units=metric&lang=en&q=${nameOfCity || 'Kiev'}`)
     .then( res => {
         this.setState({
         dataFiveDay: res.data,
@@ -128,6 +129,11 @@ toggleShowChart = () => {
         </div>
         );
     }
+}
+
+Fivedays.propTypes = {
+    data: PropTypes.object.isRequired,
+    cityForFiveDay: PropTypes.string.isRequired,
 }
 
 export default Fivedays;

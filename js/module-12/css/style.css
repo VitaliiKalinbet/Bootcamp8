@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 4rem auto;
+}
+
+.form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form__input {
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.form__submit {
+    padding: 1rem;
+    border-radius: 1rem;
+    text-transform: capitalize;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 import moment from 'moment';
-import imgObj from '../weather-img.jsx';
+// import imgObj from '../weather-img.jsx';
 import styles from './Today.css';
 import thermometer from './thermometer.png';
 import calendar from './calendar.png';
@@ -9,7 +9,7 @@ import sunrise from './sunrise.png';
 import sunset from './sunset.png';
 
 const Today = ({data, quote, time}) => {
-    // const icon = data.weather[0].icon;
+    const icon = data.weather[0].icon;
     // console.log(data);
     return (
         <div className={styles.divtoday}>
@@ -27,7 +27,7 @@ const Today = ({data, quote, time}) => {
                     </div>
                 </div>
 
-                <div className={styles.div_weather_number_info}>
+                <div>
                     <div className={styles.weather_plus_temp_icon}>
                         <img className={styles.thermometer_icon} src={thermometer} alt="thermometer"/>
                         <div className={styles.div_weather}>
@@ -51,16 +51,16 @@ const Today = ({data, quote, time}) => {
                     </div>
 
                     <div className={styles.div_sun_info}>
-                        <img className={styles.img_sun} src={sunrise} alt=""/><p>{moment.unix(data.sys.sunrise).format('HH:mm')}</p>
-                        <img className={styles.img_sun} src={sunset} alt=""/><p>{moment.unix(data.sys.sunset).format('HH:mm')}</p>
+                        <img className={styles.img_sun} src={sunrise} alt=""/><p className={styles.sun_time}>{moment.unix(data.sys.sunrise).format('HH:mm')}</p>
+                        <img className={styles.img_sun} src={sunset} alt=""/><p className={styles.sun_time}>{moment.unix(data.sys.sunset).format('HH:mm')}</p>
                     </div>
 
                 </div>
 
-            <div>
+                <div>
                     <p className={styles.p_humidity}>{data.weather.reduce( (acc,el ) => acc + el.description + ' ', '')}</p>
-                    {/* <img className={styles.icon_weather} src={`http://openweathermap.org/img/w/${icon}.png`} alt="weather"/> */}
-                     <img className={styles.weather_img} src={imgObj[data.weather[0].icon]} alt="weather"/>
+                    <img className={styles.icon_weather} src={`https://openweathermap.org/img/w/${icon}.png`} alt="weather"/>
+                        {/* <img className={styles.weather_img} src={imgObj[data.weather[0].icon]} alt="weather"/> */}
                 </div>
 
             </div>
@@ -73,8 +73,10 @@ const Today = ({data, quote, time}) => {
     );
 };
 
-Today.protoTypes = {
+Today.propTypes = {
     data: PropTypes.object.isRequired,
+    quote: PropTypes.object.isRequired,
+    time: PropTypes.string.isRequired,
 }
 
 export default Today;

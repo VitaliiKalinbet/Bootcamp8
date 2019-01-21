@@ -1,14 +1,45 @@
-.list_favor_city {
-    font-size: 1rem;
-    position: absolute;
-    top: 50px;
-    left: 15px;
-    text-decoration: none;
-    color: white;
-    list-style: none;
-    width: 85%;
-    margin: 0.5rem 0;
-    height: 8rem;
-    /* overflow: auto; */
-    overflow-y: auto;
-};
+@media (min-width: 1px) and (max-width: 767px) {
+    .list_favor_city {
+        position: absolute;
+        top: 2rem;
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        width: 100%;
+        margin: 0.5rem 0;
+        height: 6rem;
+        overflow-y: auto;
+    };
+}
+
+@media (min-width: 768px) {
+    .list_favor_city {
+        font-size: 1rem;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        width: 85%;
+        margin: 0.5rem 0;
+        height: 8rem;
+        overflow-y: auto;
+    };
+} 
+
+@media (min-width: 1024px) {
+    .list_favor_city {
+        font-size: 1rem;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+        text-decoration: none;
+        color: white;
+        list-style: none;
+        width: 85%;
+        margin: 0.5rem 0;
+        height: 8rem;
+        overflow-y: auto;
+    };
+}

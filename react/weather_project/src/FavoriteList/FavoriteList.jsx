@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemFavoriteList from '../ItemFavoriteList/ItemFavoriteList';
 import styles from './FavoriteList.css';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const FavoriteList = ({ showFavorList, favorList, openCityFromFavoriteList, deleteCityFromFavoriteList }) => {
     return (
@@ -11,5 +11,12 @@ const FavoriteList = ({ showFavorList, favorList, openCityFromFavoriteList, dele
         </ul>
     );
 };
+
+FavoriteList.propTypes = {
+    showFavorList:  PropTypes.bool.isRequired,
+    favorList: PropTypes.array.isRequired,
+    deleteCityFromFavoriteList: PropTypes.func.isRequired,
+    openCityFromFavoriteList: PropTypes.func.isRequired,   
+}
 
 export default FavoriteList;

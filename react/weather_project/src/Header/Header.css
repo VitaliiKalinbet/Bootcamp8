@@ -1,96 +1,269 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto 6rem;
+@media (min-width: 1px) and (max-width: 767px) {
+    .header {
+        width: 18rem;
+        margin: auto;
+        margin-bottom: 9.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .divInput {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+            .hover_shape{
+                align-self: center;
+            }
+
+            .div_btnFavor_plus_favorList{
+                position: relative;
+            }
+
+            .input  {
+                width: 11.5rem;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                /* border-radius: 10px; */
+                padding: 0.5rem;
+                font-size: 1rem;
+                font-family:Tahoma, sans-serif;
+                font-weight: 500;
+                color:white; 
+                margin-bottom: 1rem; 
+            }
+
+            .input:hover, .input:focus {
+                outline: none;
+            }
+
+            .star {
+                display: block;
+                width: 2rem;
+                height: 2rem;
+                margin: 0 1rem;
+            }
+
+                .star:hover {
+                    cursor: pointer;
+                }
+
+            .btn_fvr_city {
+                background: transparent;
+                border: 1px solid white;
+                border-radius: 10px;
+                padding: 0.5rem;
+                font-size: 1rem;
+                font-family:Tahoma, sans-serif;
+                font-weight: 500;
+                color:white;  
+            } 
+
+            .btn_fvr_city:hover {
+                background-color: #a2a4f0;
+                cursor: pointer;
+            }
+
+
+        .geolocation{ 
+            width: 30%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .location_img{
+                display: block;
+                opacity: 0.9;
+                width: 3rem;
+            }
+
+            .city_name{
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                opacity: 0.9;
+            }
 }
 
-.form {
-    align-self: center;
-}
-
-.input  {
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid white;
-    /* border-radius: 10px; */
-    padding: 1rem;
-    font-size: 25px;
-    font-family:Tahoma, sans-serif;
-    font-weight: 500;
-    color:white;  
-}
-
-.input:hover, .input:focus {
-    outline: none;
-}
-
-.location_img{
-    display: block;
-    opacity: 0.9;
-}
-
-.star {
-    display: block;
-    width: 3.125rem;
-    height: 3.125rem;
-    margin: 0 1rem;
-}
-
-.star:hover {
-    cursor: pointer;
-}
-
-.btn_fvr_city {
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 1rem;
-    font-size: 20px;
-    font-family:Tahoma, sans-serif;
-    font-weight: 500;
-    color:white;  
-} 
-
-.btn_fvr_city:hover {
-    background-color: #a2a4f0;
-    cursor: pointer;
-}
-
-.geolocation{ 
-    text-align: center;
-}
-
-.city_name{
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    opacity: 0.9;
-}
-
-/* Стилизация контейнера с инпутом */
-.divInput {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.hover_shape{
-    align-self: center;
-}
-
-.div_btnFavor_plus_favorList{
-    position: relative;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .header {
         width: 768px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto 6rem;
     }
+    
+    .divInput {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+        .hover_shape{
+            align-self: center;
+        }
+        
+        .div_btnFavor_plus_favorList{
+            position: relative;
+        }
+    
+        .form {
+            align-self: center;
+        }
+        
+        .input  {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 1rem;
+            font-size: 25px;
+            font-family:Tahoma, sans-serif;
+            font-weight: 500;
+            color:white;  
+        }
+        
+        .input:hover, .input:focus {
+            outline: none;
+        }
+        
+        .star {
+            display: block;
+            width: 3.125rem;
+            height: 3.125rem;
+            margin: 0 1rem;
+        }
+        
+        .star:hover {
+            cursor: pointer;
+        }
+        
+        .btn_fvr_city {
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 20px;
+            font-family:Tahoma, sans-serif;
+            font-weight: 500;
+            color:white;  
+        } 
+        
+        .btn_fvr_city:hover {
+            background-color: #a2a4f0;
+            cursor: pointer;
+        }
+    
+    .geolocation{ 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .location_img{
+            display: block;
+            opacity: 0.9;
+            width: 5rem;
+        }
+        
+        .city_name{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0.9;
+        }
 }
 
 @media (min-width: 1024px) {
     .header {
         width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto 6rem;
     }
+    
+    .divInput {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+        .hover_shape{
+            align-self: center;
+        }
+        
+        .div_btnFavor_plus_favorList{
+            position: relative;
+        }
+    
+        .form {
+            align-self: center;
+        }
+        
+        .input  {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 1rem;
+            font-size: 25px;
+            font-family:Tahoma, sans-serif;
+            font-weight: 500;
+            color:white;  
+        }
+        
+        .input:hover, .input:focus {
+            outline: none;
+        }
+        
+        .star {
+            display: block;
+            width: 3.125rem;
+            height: 3.125rem;
+            margin: 0 1rem;
+        }
+        
+        .star:hover {
+            cursor: pointer;
+        }
+        
+        .btn_fvr_city {
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 1rem;
+            font-size: 20px;
+            font-family:Tahoma, sans-serif;
+            font-weight: 500;
+            color:white;  
+        } 
+        
+        .btn_fvr_city:hover {
+            background-color: #a2a4f0;
+            cursor: pointer;
+        }
+    
+    .geolocation{ 
+        text-align: center;
+    }
+
+        .location_img{
+            display: block;
+            opacity: 0.9;
+        }
+        
+        .city_name{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            opacity: 0.9;
+        }
 }

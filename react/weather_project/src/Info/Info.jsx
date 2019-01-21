@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Today from '../Today/Today';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import Menu from '../Menu/Menu';
 import Fivedays from '../Fivedays/Fivedays';
 import styles from './Info.css';
 
-const Info = ({time, data, quote, isLoading, cityForFiveDay}) => {
+const Info = ({time, data, quote, cityForFiveDay}) => {
     return (
         <div className={styles.info}>
             <Menu/>
@@ -18,8 +18,11 @@ const Info = ({time, data, quote, isLoading, cityForFiveDay}) => {
     );
 };
 
-Info.protoTypes = {
+Info.propTypes = {
+    time: PropTypes.string,
     data: PropTypes.object.isRequired,
+    quote: PropTypes.object.isRequired,
+    cityForFiveDay: PropTypes.string.isRequired,
 }
 
 export default Info;

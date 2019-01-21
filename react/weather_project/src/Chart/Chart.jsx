@@ -1,6 +1,8 @@
 import React from 'react';
 import moment from 'moment';
 import { Line } from 'react-chartjs-2';
+import styles from './Chart.css';
+import PropTypes from 'prop-types';
 
 const Chart = ({ arrOfAverageHumidity, arrOfAverageTemp, arrOfWindSpeed, arrOfPressure }) => {
 
@@ -52,7 +54,6 @@ const Chart = ({ arrOfAverageHumidity, arrOfAverageTemp, arrOfWindSpeed, arrOfPr
                backgroundColor:'green',
                borderColor: 'green',
                fill:false,
-               hidden: true,
                pointStyle: 'circle',
                pointRadius: 6,
                pointHoverRadius: 10,
@@ -89,10 +90,17 @@ const Chart = ({ arrOfAverageHumidity, arrOfAverageTemp, arrOfWindSpeed, arrOfPr
          }
 
    return (
-       <div>
+       <div className={styles.chart}>
            <Line data = {myChart}  options= {option}/>
        </div>
    );
 };
+
+Chart.propTypes = {
+    arrOfAverageHumidity: PropTypes.array.isRequired,
+    arrOfAverageTemp: PropTypes.array.isRequired,
+    arrOfWindSpeed: PropTypes.array.isRequired,
+    arrOfPressure: PropTypes.array.isRequired,
+}
 
 export default Chart;

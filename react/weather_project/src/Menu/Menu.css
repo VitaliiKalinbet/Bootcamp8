@@ -1,25 +1,84 @@
-.menu {
-    position: absolute;
-    top: -50px;
-    left: 20px;
-    display: flex;
-    list-style: none;
+@media (min-width: 1px) and (max-width: 767px) {
+    .menu {
+        position: absolute;
+        top: -2.1rem;
+        left: 1rem;
+        display: flex;
+        list-style: none;
+    }
+    
+    .menu_btn {
+        display: block;
+        text-decoration: none;
+        border-radius: 0.8rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: black;
+        font-weight: 500;
+        background-color: #d4d2cf;
+        margin: 0.2rem;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    .menu_btn:hover {
+        background-color: #a2a4f0;
+        cursor: pointer;
+    }
 }
 
-.menu_btn {
-    display: block;
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 1rem;
-    font-size: 15px;
-    color: black;
-    font-weight: 500;
-    background-color: #d4d2cf;
-    margin: 0.5rem;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu {
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        display: flex;
+        list-style: none;
+    }
+    
+    .menu_btn {
+        display: block;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 15px;
+        color: black;
+        font-weight: 500;
+        background-color: #d4d2cf;
+        margin: 0.5rem;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    .menu_btn:hover {
+        background-color: #a2a4f0;
+        cursor: pointer;
+    }
 }
 
-.menu_btn:hover {
-    background-color: #a2a4f0;
-    cursor: pointer;
-}
+@media (min-width: 1024px) {
+    .menu {
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        display: flex;
+        list-style: none;
+    }
+    
+    .menu_btn {
+        display: block;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 1rem;
+        font-size: 15px;
+        color: black;
+        font-weight: 500;
+        background-color: #d4d2cf;
+        margin: 0.5rem;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    .menu_btn:hover {
+        background-color: #a2a4f0;
+        cursor: pointer;
+    }
+} 
+

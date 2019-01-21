@@ -1,0 +1,18 @@
+{
+  "name": "connectmongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon app.js\" \"cd.. && cd client && npm start\""
+  },
+  "author": "vk",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.3"
+  }
+}

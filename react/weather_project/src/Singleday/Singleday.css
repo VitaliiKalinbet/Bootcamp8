@@ -1,94 +1,241 @@
-.single_day_card {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    border: 2px solid white;
-    border-radius: 10px;
-    text-align: center;
-    padding: 2rem;
-}
+@media (min-width: 1px) and (max-width: 767px) {
+    .single_day_card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid grey;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0.15rem;
+        margin: 0.15rem;
+        box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.75);
+    }
 
-.single_day_card:hover {
-    background-color: rgb(196, 196, 233);
-}
+    .img{
+        width: 3rem;
+        height: 3rem;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .div_min_max {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+        .sign {
+            font-size: 0.8rem;
+            color: black;
+            font-weight: 400;
+            text-align: center;
+        }
+        
+        .small_temp {
+            font-size: 1rem;
+            color: black;
+            font-weight: bold;
+            margin: 0.25rem;
+            text-align: center;
+        }
+    
+    .p_day_now {
+        font-size: 1rem;
+        color: black;
+        font-weight: 500;
+        text-align: center;
+    }
+      
+    .p_date {
+        font-size: 0.8rem;
+        color: black;
+        font-weight: 500;
+        opacity: 1;
+    }
+    
 
-.p_temp {
-    font-size: 40px;
-    color: black;
-    font-weight: bold;
-    opacity: 1;
-}
-
-.img{
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
-}
-
-.div_min_max {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* .p_temp_now {
-    font-size: 60px;
-    color: black;
-    font-weight: bold;
-    margin: 0 auto;
-} */
-
-.sign {
-    font-size: 16px;
-    color: black;
-    font-weight: 400;
-    text-align: center;
-}
-
-.small_temp {
-    font-size: 25px;
-    color: black;
-    font-weight: bold;
-    margin: 0.25rem;
-    text-align: center;
-}
-
-.p_day_now {
-    font-size: 20px;
-    color: black;
-    font-weight: 500;
-    margin: 0.25rem;
-    text-align: center;
-}
-
-.icon_weather {
-    display: block;
-    margin: 0 auto;
+    .btn_more_info {
+        display: none;
+    }
+    
 }
 
 
-.p_date {
-    font-size: 15px;
-    margin: 0.25rem;
-    color: black;
-    font-weight: 500;
-    opacity: 1;
+@media (min-width: 768px) and (max-width: 1023px) {
+    .single_day_card {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .single_day_card:hover {
+        background-color: rgb(196, 196, 233);
+    }
+    
+    .p_temp {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        opacity: 1;
+    }
+    
+    .img{
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .div_min_max {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .sign {
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .small_temp {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        margin: 0.25rem;
+        text-align: center;
+    }
+    
+    .p_day_now {
+        font-size: 20px;
+        color: black;
+        font-weight: 500;
+        margin: 0.25rem;
+        text-align: center;
+    }
+    
+    .icon_weather {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    .p_date {
+        font-size: 15px;
+        margin: 0.25rem;
+        color: black;
+        font-weight: 500;
+        opacity: 1;
+    }
+    
+    .btn_more_info {
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 0.7rem;
+        padding: 0.25rem;
+        font-size: 15px;
+        font-family:Tahoma, sans-serif;
+        font-weight: 300;
+        color:black;  
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    .btn_more_info:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
 }
 
-.btn_more_info {
-    background: transparent;
-    border: 1px solid black;
-    border-radius: 0.7rem;
-    padding: 0.25rem;
-    font-size: 15px;
-    font-family:Tahoma, sans-serif;
-    font-weight: 300;
-    color:black;  
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+@media (min-width: 1024px) {
+    .single_day_card {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        border: 2px solid white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .single_day_card:hover {
+        background-color: rgb(196, 196, 233);
+    }
+    
+    .p_temp {
+        font-size: 40px;
+        color: black;
+        font-weight: bold;
+        opacity: 1;
+    }
+    
+    .img{
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .div_min_max {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .sign {
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .small_temp {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        margin: 0.25rem;
+        text-align: center;
+    }
+    
+    .p_day_now {
+        font-size: 20px;
+        color: black;
+        font-weight: 500;
+        margin: 0.25rem;
+        text-align: center;
+    }
+    
+    .icon_weather {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    
+    .p_date {
+        font-size: 15px;
+        margin: 0.25rem;
+        color: black;
+        font-weight: 500;
+        opacity: 1;
+    }
+    
+    .btn_more_info {
+        background: transparent;
+        border: 1px solid black;
+        border-radius: 0.7rem;
+        padding: 0.25rem;
+        font-size: 15px;
+        font-family:Tahoma, sans-serif;
+        font-weight: 300;
+        color:black;  
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    }
+    
+    .btn_more_info:hover {
+        background-color: gray;
+        cursor: pointer;
+    }
 }
 
-.btn_more_info:hover {
-    background-color: gray;
-    cursor: pointer;
-}
