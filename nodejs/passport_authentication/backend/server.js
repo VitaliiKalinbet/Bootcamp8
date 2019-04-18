@@ -4,12 +4,19 @@ const FileStore = require('session-file-store')(session);
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const cors = require('cors');
 
 const app = express();
+const PORT = process.env.PORT || 3003;
 
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(session({store: new FileStore(), secret: 'secret of goit', resave: false, saveUninitialized: true}));
+app.use(session({store: new FileStore(), secret: 'secret of goit', resave: false, saveUninitialized: true,cookie:{}
+}));
+
+// отмена запрета общения между разными доменами с помощью пакета cors
+app.use(cors());
+app.options('*', cors());
 
 // хранилище пользователей, в примере он один и хранится в объекте
 const userDB = {
@@ -54,11 +61,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get('/', (req, res) => {
-  res.send('Это главная страница');
+  res.json('Это главная страница');
 });
 
 app.get('/login', (req, res) => {
-  res.send('Это страница авторизации, отправьте сюда POST запрос {email, password}');
+  res.json('Это страница авторизации, отправьте сюда POST запрос {email, password}');
 });
 
 app.post('/login', (req, res, next) => {
@@ -67,24 +74,24 @@ app.post('/login', (req, res, next) => {
       return next(err);
     }
     if (!user) {
-      return res.send('Укажите правильный email и пароль!');
+      return res.json('Укажите правильный email и пароль!');
     }
     req.login(user, err => {
-      return res.send('Вы удачно прошли аутентификацию!');
+      return res.json({string: 'Вы удачно прошли аутентификацию!', cookie: req.session.cookie});
+      // return res.json('Вы удачно прошли аутентификацию!').cookie('name');
     });
   })(req, res, next);
 });
 
 app.get('/secret', (req, res) => {
   if (req.isAuthenticated()) {
-    res.send('Вы прошли авторизацию и оказались на закрытой странице');
+    res.json('Вы прошли авторизацию и оказались на закрытой странице');
   } else {
     res
-      .status(403)
-      .send('Доступ запрещен');
+      .json('Доступ запрещен')
   }
 });
 
-app.listen(3000, () => {
-  console.log('Сервер запущен на localhost:3000');
+app.listen(PORT, () => {
+  console.log(`Сервер запущен на localhost:${PORT}`);
 });
